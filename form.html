@@ -6,92 +6,102 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип MISHKA">
-    </a>
-    <div class="nav-toggle" id="toggle">
-      <span class="nav-toggle__top-rectangle"></span>
-      <span class="nav-toggle__middle-rectangle"></span>
-      <span class="nav-toggle__bottom-rectangle"></span>
+    <div class="page-header__top">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип MISHKA">
+        </a>
+        <button class="nav-toggle" id="toggle"></button>
+      </div>
     </div>
-    <div class="page-header__wrapper">
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-        </ul>
-      </nav>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+      </ul>
       <form class="search-form" action="" method="post">
-        <input class="search-form__submit" type="submit">
         <input class="search-form__search" type="search"  placeholder="Поиск по сайту">
+        <button class="search-form__submit" type="submit"></button>
       </form>
-      <a class="cart" href="#">Корзина: пока пуста</a>
+      <a class="cart-counter" href="#">Корзина: пока пуста</a>
+    </nav>
+    <div class="intro">
+      <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__head">
-      <h1 class="page-main__title">Вязание на заказ</h1>
-    </div>
+    <p class="intro-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form" action="" method="post">
-      <p class="order-form__motion">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <fieldset class="order-form__fieldset">
-        <legend>Тип</legend>
-        <input class="order-form__input" type="radio" name="type" id="type-input-1" checked>
-        <input class="order-form__input" type="radio" name="type" id="type-input-2">
-        <label class="order-form__toggle" for="type-input-1">Аксессуар для интерьера</label>
-        <label class="order-form__toggle" for="type-input-2">Детская игрушка</label>
+      <fieldset class="order-form__wrapper">
+        <legend class="order-form__title">Тип</legend>
+        <div class="order-form__group">
+          <input class="order-form__input" type="radio" name="type" id="type-input-1" checked>
+          <label class="order-form__toggle" for="type-input-1">Аксессуар для интерьера</label>
+          <input class="order-form__input" type="radio" name="type" id="type-input-2">
+          <label class="order-form__toggle" for="type-input-2">Детская игрушка</label>
+        </div>
       </fieldset>
-      <fieldset class="order-form__fieldset">
-        <legend>Цвет</legend>
-        <input class="order-form__checkbox" type="checkbox" name="checkbox-input-white" id="checkbox-input-1" checked>
-        <input class="order-form__checkbox" type="checkbox" name="checkbox-input-gray" id="checkbox-input-2" checked>
-        <input class="order-form__checkbox" type="checkbox" name="checkbox-input-tiffany" id="checkbox-input-3">
-        <input class="order-form__checkbox" type="checkbox" name="checkbox-input-black" id="checkbox-input-4">
-        <input class="order-form__checkbox" type="checkbox" name="checkbox-input-pink" id="checkbox-input-5">
-        <input class="order-form__checkbox" type="checkbox" name="checkbox-input-orange" id="checkbox-input-6">
-        <label class="order-form__label" for="checkbox-input-1">Белый</label>
-        <label class="order-form__label" for="checkbox-input-2">Серый</label>
-        <label class="order-form__label" for="checkbox-input-3">«Тиффани»</label>
-        <label class="order-form__label" for="checkbox-input-4">Черный</label>
-        <label class="order-form__label" for="checkbox-input-5">Розовый</label>
-        <label class="order-form__label" for="checkbox-input-6">Оранжевый</label>
+      <fieldset class="order-form__wrapper">
+        <legend class="order-form__title">Цвет</legend>
+        <div class="order-form__group">
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-input-white" id="checkbox-input-1" checked>
+          <label class="order-form__label" for="checkbox-input-1">Белый</label>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-input-gray" id="checkbox-input-2" checked>
+          <label class="order-form__label" for="checkbox-input-2">Серый</label>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-input-tiffany" id="checkbox-input-3">
+          <label class="order-form__label" for="checkbox-input-3">«Тиффани»</label>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-input-black" id="checkbox-input-4">
+          <label class="order-form__label" for="checkbox-input-4">Черный</label>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-input-pink" id="checkbox-input-5">
+          <label class="order-form__label" for="checkbox-input-5">Розовый</label>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-input-orange" id="checkbox-input-6">
+          <label class="order-form__label" for="checkbox-input-6">Оранжевый</label>
+        </div>
       </fieldset>
-      <fieldset class="order-form__fieldset">
-        <legend>ФИО</legend>
-        <label class="order-form__label" for="name">Имя:</label>
-        <input class="order-form__text" type="text" name="name" id="name" placeholder="Введите ваше имя" required autofocus>
-        <label class="order-form__label" for="econdname">Фамилия:</label>
-        <input class="order-form__text" type="text" name="econdname" id="secondname" placeholder="Укажите фамилию" required>
-        <label class="order-form__label" for="thirdname">Отчество:</label>
-        <input class="order-form__text" type="text" name="thirdname" id="thirdname" placeholder="Отчество, если желаете">
+      <fieldset class="order-form__wrapper">
+        <legend class="order-form__title">ФИО</legend>
+        <div class="order-form__group">
+          <input class="order-form__text" type="text" name="name" id="name" placeholder="Введите ваше имя" required autofocus>
+          <label class="order-form__label" for="name">Имя:</label>
+        </div>
+        <div class="order-form__group">
+          <input class="order-form__text" type="text" name="econdname" id="secondname" placeholder="Укажите фамилию" required>
+          <label class="order-form__label" for="econdname">Фамилия:</label>
+        </div>
+        <div class="order-form__group">
+          <input class="order-form__text" type="text" name="thirdname" id="thirdname" placeholder="Отчество, если желаете">
+          <label class="order-form__label" for="thirdname">Отчество:</label>
+        </div>
       </fieldset>
-      <fieldset class="order-form__fieldset">
-        <legend>Тел</legend>
+      <fieldset class="order-form__wrapper">
+        <legend class="order-form__title">Тел</legend>
         <input class="order-form__text" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХ ХХ" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
       </fieldset>
-      <fieldset class="order-form__fieldset">
-        <legend>E-mail</legend>
+      <fieldset class="order-form__wrapper">
+        <legend class="order-form__title">E-mail</legend>
         <input class="order-form__text" type="email" name="email" id="email" placeholder="Ваш Email" required>
       </fieldset>
-      <fieldset class="order-form__fieldset">
-        <legend>Доп</legend>
+      <fieldset class="order-form__wrapper">
+        <legend class="order-form__title">Доп</legend>
         <textarea name="mesage" id="mesage" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
-      <p class="order-form__motion">Все поля обязательны для заполнения</p>
-      <input class="order-form__submit" type="submit"  value="Отправить заказ">
+      <div class="order-form__footer">
+        <p class="order-form__motion">Все поля обязательны для заполнения</p>
+        <button class="order-form__btn btn" type="submit"  value="Отправить заказ"></button>
+      </div>
     </form>
   </main>
- <footer class="page-footer">
-    <div class="page-footer__social">
+  <footer class="page-footer">
+    <div class="container">
       <div class="social">
         <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
         <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
       </div>
-    </div>
-    <div class="page-footer__copyright">
-      <p class="page-footer__text">Разработано:</p>
-      <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="45" height="60" alt="HTML Academy"></a>
+      <div class="copyright">
+        Разработано:
+        <a class="btn copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="45" height="60" alt="HTML Academy"></a>
+      </div>
     </div>
   </footer>
 </body>
