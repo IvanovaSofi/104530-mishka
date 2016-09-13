@@ -13,11 +13,27 @@
   },
   "homepage": "https://github.com/htmlacademy-adaptive/104530-mishka",
   "devDependencies": {
-    "lintspaces-cli": "0.4.0"
+    "autoprefixer": "6.4.1",
+    "browser-sync": "2.15.0",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "gulp-sass": "2.3.2",
+    "@htmlacademy/editorconfig-cli": "0.0.7"
   },
   "scripts": {
-    "test": "lintspaces -e .editorconfig -i 'js-comments' -i 'html-comments' *.html {less,sass,postcss}/*.* {less,sass,postcss}/**/*.* *.{js,json} js/*.{js,json} js/**/*.{js,json}"
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
   },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
   "engines": {
     "node": "6.5"
   }
