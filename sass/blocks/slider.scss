@@ -1,0 +1,24 @@
+.slider{
+  &__arrows{
+    margin: 25px auto;
+    font-size: 0;
+
+  }
+  &__prev{
+    width: 130px;
+    min-height: 50px;
+    border:1px solid $border-color;
+    background: $white;
+    margin: 0;
+    background: url("../img/icon-left-arrow.svg") no-repeat center center;
+  }
+  &__next{
+    width: 130px;
+    min-height: 50px;
+    border:1px solid $border-color;
+    background: $white;
+    margin: 0;
+    background: url("../img/icon-right-arrow.svg") no-repeat center center;
+  }
+
+}

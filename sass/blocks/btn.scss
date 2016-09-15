@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 260px;
+  padding: 12px 30px;
+  border: 2px solid $gray;
+  color: $gray;
+  text-transform: uppercase;
+  font-family: $base-font-bold;
+  font-size: $base-font-size;
+  &:hover,
+  &--hover {}
+  &:active,
+  &--active {}
+  &--modify {
+    &:hover,
+    &--hover {}
+    &:active,
+    &--active {}
+  }
+}

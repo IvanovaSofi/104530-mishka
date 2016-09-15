@@ -1,0 +1,25 @@
+.category {
+  color: $white;
+  text-align: left;
+  &__item {
+    padding: 0;
+  }
+  &__link {
+    padding: 28px 55% 28px 30px;
+    color: $white;
+    font-size: $xl-font-size;
+    line-height: $base-line-height;
+    display: block;
+  }
+  &__link--first {
+    background: $light-mint-color;
+  }
+  &__link--second {
+    background: $dark-mint-color;
+  }
+}
+
+&__list {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,47 @@
+.featured {
+  padding: 20px 0;
+  &__header {
+    outline: 1px solid black;
+    border-top: 1px solid transparent;
+  }
+  &__description {
+    margin: 18px 0;
+  }
+  &__title {
+    margin: 5px 0;
+
+  }
+  &__tag {
+    font-size: $m-font-size;
+    text-transform: uppercase;
+    color: $light-mint-color;
+    font-family: $base-font-bold;
+  }
+  &__properties {
+    margin: 15px 0 30px 0;
+    border-collapse: collapse;
+  }
+  &__name {
+    padding: 7px 30px 8px 0;
+    border-bottom:1px solid $border-color;
+  }
+  &__value {
+    padding: 7px 30px 8px 0;
+    border-bottom:1px solid $border-color;
+  }
+  &__img {
+    width:260px;
+    height:315px;
+  }
+  &__footer {
+    margin: 24px 0 15px 0;
+    color:$gray;
+    text-align: center;
+    font-size: $m-font-size;
+    font-family: $base-font-bold;
+    outline: 1px solid black;
+  }
+  &__btn{
+    margin-top: 25px;
+  }
+}

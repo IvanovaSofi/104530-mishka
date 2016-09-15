@@ -1,0 +1,25 @@
+.contacts {
+  padding: 30px 0;
+  &__title {}
+  &__title--small {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__map {
+    position: relative;
+    width: 100%;
+    min-height: 457px;
+    background: url("/../img/map-mobile@1x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  &__map::after {
+    position: absolute;
+    width: 67px;
+    height: 100px;
+    content: "";
+    background: url("/../img/icon-map-pin.svg") no-repeat center center;
+    left: 40%;
+    top: 35%;
+  }
+
+}

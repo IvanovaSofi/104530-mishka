@@ -1,0 +1,29 @@
+.feedback {
+  margin:30px 0;
+  outline: 1px solid black;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+
+  &__wrapper {}
+  &__author {
+    margin: 25px 0;
+
+  }
+  &__title{
+    outline: 1px solid black;
+  }
+  &__author-name {
+    font-size: $l-font-size;
+    line-height: $base-line-height;
+    font-style: normal;
+    font-family: $base-font-bold;
+    outline: 1px solid black;
+  }
+  &__author-tag {
+    font-size: $l-font-size;
+    line-height: $base-line-height;
+    font-style: normal;
+    font-family: $base-font;
+    outline: 1px solid black;
+  }
+}

@@ -1,0 +1,30 @@
+.media {
+
+  &__content {
+    width: 260px;
+    min-height: 500px;
+    border: 1px solid $border-color;
+    margin: 0 30px 60px 30px;
+  }
+  &__header{
+    outline: 1px solid black;
+
+  }
+  &__title{
+    outline: 1px solid black;
+
+  }
+  &__description{
+    margin: 30px;
+    outline: 1px solid black;
+    font-size: $xs-font-size;;
+    line-height: $base-line-height;
+  }
+  &__footer{
+    text-align: center;
+  }
+  &__btn{
+    min-width: 190px;
+    margin-bottom: 30px;
+  }
+}

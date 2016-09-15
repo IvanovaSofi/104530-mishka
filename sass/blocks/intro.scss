@@ -1,0 +1,18 @@
+.intro {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 177px;
+  background: $light-gray;
+
+  &--image {
+    min-height: 282px;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  &__title {
+    margin: 0;
+    padding: 0 30px;
+  }
+}

@@ -1,0 +1,15 @@
+.main-nav{
+  display: block;
+  text-align: center;
+  background: $white;
+
+  &__list{
+    margin: 0;
+    padding: 0;
+  }
+  &__item{
+    padding: 28px 0;
+    border-bottom:1px solid $border-color;
+  }
+
+}

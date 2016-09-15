@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__top">
       <div class="container">
         <a class="logo" href="index.html">
-          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип MISHKA">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
         </a>
-        <button class="nav-toggle" id="toggle"></button>
+        <button class="nav-toggle" id="toggle"><span>toggle menu</span></button>
       </div>
     </div>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
@@ -33,7 +34,7 @@
     <section class="catalog">
       <article class="catalog-item">
         <a class="catalog-item__picture-link" href="#">
-          <img src="http://placehold.it/260x195" width="260" height="195" alt="Фотография товара">
+          <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
         </a>
         <div class="catalog-item__description">
           <div class="catalog-item__description-header">
@@ -42,13 +43,13 @@
           </div>
           <div class="catalog-item__description-footer">
             <span class="catalog-item__price">1 200 руб.</span>
-            <a href="#"><img src="http://placehold.it/21x19"  width="21" height="19" alt="Добавить в корзину"></a>
+            <a href="#"><img src="img/icon-cart.svg"  width="21" height="19" alt="Добавить в корзину"></a>
           </div>
         </div>
       </article>
       <article class="catalog-item">
         <a class="catalog-item__picture-link" href="#">
-          <img src="http://placehold.it/260x195" width="260" height="195" alt="Фотография товара">
+          <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
         </a>
         <div class="catalog-item__description">
           <div class="catalog-item__description-header">
@@ -57,13 +58,13 @@
           </div>
           <div class="catalog-item__description-footer">
             <span class="catalog-item__price">690 руб.</span>
-            <a href="#"><img src="http://placehold.it/21x19"  width="21" height="19" alt="Добавить в корзину"></a>
+            <a href="#"><img src="img/icon-cart.svg"  width="21" height="19" alt="Добавить в корзину"></a>
           </div>
         </div>
       </article>
       <article class="catalog-item">
         <a class="catalog-item__picture-link" href="#">
-          <img src="http://placehold.it/260x195" width="260" height="195" alt="Фотография товара">
+          <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фотография товара">
         </a>
         <div class="catalog-item__description">
           <div class="catalog-item__description-header">
@@ -72,7 +73,7 @@
           </div>
           <div class="catalog-item__description-footer">
             <span class="catalog-item__price">1 500 руб.</span>
-            <a href="#"><img src="http://placehold.it/21x19"  width="21" height="19" alt="Добавить в корзину"></a>
+            <a href="#"><img src="img/icon-cart.svg"  width="21" height="19" alt="Добавить в корзину"></a>
           </div>
         </div>
       </article>
@@ -80,11 +81,12 @@
     <section class="media">
       <div class="media__content">
         <div class="media__header">
+          <img src="img/icon-video.svg"  width="42" height="32" alt="Добавить в корзину">
           <div class="media__title">Процесс производства</div>
         </div>
         <div class="media__video">
-          <img src="http://placehold.it/260x150" width="260" height="150">
-          <img src="http://placehold.it/102x78" width="102" height="78">
+          <img src="img/video-mobile@1x.jpg" width="260" height="150">
+          <img src="img/icon-play.svg" width="102" height="78">
         </div>
         <div class="media__footer">
           <p class="media__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -96,32 +98,39 @@
   <footer class="page-footer">
     <div class="container">
       <div class="social">
-        <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-      </div>
-      <div class="copyright">
-        Разработано:
-        <a class="btn copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="45" height="60" alt="HTML Academy"></a>
-      </div>
+       <a class="social-link social-link--vk" href="https://www.instagram.com/htmlacademy/">
+        <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+      </a>
+      <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">
+        <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
+      </a>
+      <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">
+        <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
+      </a>
     </div>
-  </footer>
-  <div class="overflow overlay--hidden">
-   <div class="modal">
-    <form class="modal-form" action="" method="post">
-      <b class="modal-form__title">Добавить в корзину</b>
-      <p class="modal-form__motion">Выберите размер:</p>
-      <div class="modal-form__fields">
-        <input class="modal-form__input" type="radio" name="size" id="size-input-1" checked>
-        <label class="modal-form__toggle" for="size-input-1">S</label>
-        <input class="modal-form__input" type="radio" name="size" id="size-input-2">
-        <label class="modal-form__toggle" for="size-input-2">M</label>
-        <input class="modal-form__input" type="radio" name="size" id="size-input-3">
-        <label class="modal-form__toggle" for="size-input-3">L</label>
-      </div>
-      <button class="modal-form__btn btn" type="submit"  value="Добавить"></button>
-    </form>
+    <div class="copyright"> Разработано
+      <a class="copyright-link" href="https://twitter.com/htmlacademy_ru">
+        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+      </a>
+    </div>
   </div>
+</footer>
+<div class="overlay overlay--hidden"></div>
+<div class="modal">
+  <b class="modal__title">Добавить в корзину</b>
+  <form class="modal-form" action="" method="post">
+    <p class="modal-form__motion">Выберите размер:</p>
+    <div class="modal-form__fields">
+      <input class="modal-form__input" type="radio" name="size" id="size-input-1" checked>
+      <label class="modal-form__toggle" for="size-input-1">S</label>
+      <input class="modal-form__input" type="radio" name="size" id="size-input-2">
+      <label class="modal-form__toggle" for="size-input-2">M</label>
+      <input class="modal-form__input" type="radio" name="size" id="size-input-3">
+      <label class="modal-form__toggle" for="size-input-3">L</label>
+    </div>
+    <button class="modal-form__btn btn" type="submit"  value="Добавить">Добавить</button>
+  </form>
 </div>
+
 </body>
 </html>
