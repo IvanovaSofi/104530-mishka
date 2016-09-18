@@ -1,47 +1,71 @@
 .featured {
   padding: 20px 0;
+
+  background: rgba(144, 242, 175, 0.25);
+  outline: 2px solid rgb(77, 240, 62);
+
   &__header {
     outline: 1px solid black;
     border-top: 1px solid transparent;
+
+    outline: 2px solid rgb(17, 150, 79);
   }
+
   &__description {
     margin: 18px 0;
+
+    outline: 2px solid rgb(17, 150, 79);
   }
+
   &__title {
     margin: 5px 0;
 
+    outline: 2px solid rgb(34, 115, 79);
   }
+
   &__tag {
     font-size: $m-font-size;
     text-transform: uppercase;
     color: $light-mint-color;
     font-family: $base-font-bold;
   }
+
   &__properties {
     margin: 15px 0 30px 0;
     border-collapse: collapse;
   }
+
   &__name {
     padding: 7px 30px 8px 0;
-    border-bottom:1px solid $border-color;
+    border-bottom:1px solid $border-gray;
   }
+
   &__value {
     padding: 7px 30px 8px 0;
-    border-bottom:1px solid $border-color;
+    border-bottom:1px solid $border-gray;
   }
+
   &__img {
     width:260px;
     height:315px;
+
+    outline: 2px solid rgb(17, 150, 79);
   }
+
   &__footer {
     margin: 24px 0 15px 0;
-    color:$gray;
+
+    color:$font-gray;
     text-align: center;
     font-size: $m-font-size;
     font-family: $base-font-bold;
-    outline: 1px solid black;
+
+    outline: 2px solid rgb(17, 150, 79);
   }
+
   &__btn{
     margin-top: 25px;
+
+    outline: 2px solid rgb(17, 150, 79);
   }
 }

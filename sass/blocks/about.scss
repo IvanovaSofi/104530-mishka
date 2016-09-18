@@ -1,22 +1,33 @@
 .about{
   padding: 10px 0;
-  outline: 1px solid black;
-  &__title{
-    outline: 1px solid black;
+
+  background: rgba(125, 181, 233, 0.24);
+  outline: 2px solid rgb(69, 148, 205);
+
+  &__wrapper{
+    background: rgba(26, 34, 228, 0.24);
+    outline: 2px solid rgb(48, 54, 193);
   }
+  &__title{
+    outline: 2px solid rgb(69, 148, 205);
+  }
+
   &__icon{
     min-width: 55px;
     min-height: 60px;
     margin-top: 10px;
-    outline: 1px solid black;
     display: inline-block;
-  }
-  &__text{
-    font-size: $m-font-size;;
-    line-height: $s-line-height;
-    margin: 0 15% 10px 0;
-    font-family: $base-font-bold;
-    outline: 1px solid black;
 
+    outline: 2px solid rgb(69, 148, 205);
+  }
+
+  &__text{
+    margin: 0 15% 10px 0;
+
+    font-size: $m-font-size;
+    line-height: $s-line-height;
+    font-family: $base-font-bold;
+
+    outline: 2px solid rgb(69, 148, 205);
   }
 }

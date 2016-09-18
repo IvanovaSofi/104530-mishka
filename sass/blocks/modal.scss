@@ -1,11 +1,13 @@
 .modal{
   width: 320px;
   min-height: 337px;
+  top: 0;
+  padding: 30px;
+  display: none;
+
   border:1px solid $border-color;
   box-shadow:0 5px 10px $border-color;
 
-  top: 0;
-  padding: 30px;
   &__title{
     font-size: $xxl-font-size;
     line-height: $m-line-height;

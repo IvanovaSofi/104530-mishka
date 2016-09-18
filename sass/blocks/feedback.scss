@@ -1,17 +1,24 @@
 .feedback {
   margin:30px 0;
-  outline: 1px solid black;
   border: 1px solid transparent;
+
+  outline: 2px solid rgba(95, 224, 237, 0.97);
   box-sizing: border-box;
 
-  &__wrapper {}
+  &__wrapper {
+      background: rgba(0, 186, 255, 0.16);
+      outline: 2px solid rgba(20, 171, 186, 0.97);
+  }
+
   &__author {
     margin: 25px 0;
 
   }
+
   &__title{
-    outline: 1px solid black;
+    outline: 2px solid rgba(13, 129, 140, 0.97);
   }
+
   &__author-name {
     font-size: $l-font-size;
     line-height: $base-line-height;
@@ -19,6 +26,7 @@
     font-family: $base-font-bold;
     outline: 1px solid black;
   }
+
   &__author-tag {
     font-size: $l-font-size;
     line-height: $base-line-height;

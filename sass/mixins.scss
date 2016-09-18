@@ -1,66 +1,22 @@
 
+@mixin clearfix() {
+  &::after {
+    content: "";
 
-@mixin flexbox {
-  display: flex;
+    display: table;
+    clear: both;
+  }
 }
 
-%flexbox { @include flexbox; }
+@mixin container() {
+  width: 260px;
+  margin: 0 auto;
 
+  @media (min-width:$break-tablet) {
+    width: 640px;
+  }
 
-
-@mixin inline-flex {
-  display: inline-flex;
-}
-
-%inline-flex { @include inline-flex; }
-
-
-@mixin flex-direction($value: row) {
-  flex-direction: $value;
-}
-
-
-@mixin flex-wrap($value: nowrap) {
-  flex-wrap: $value;
-}
-
-
-@mixin flex-flow($values: (row nowrap)) {
-  flex-flow: $values;
-}
-
-@mixin order($int: 0) {
-  order: $int;
-}
-
-@mixin flex-grow($int: 0) {
-  flex-grow: $int;
-}
-
-@mixin flex-shrink($int: 1) {
-  flex-shrink: $int;
-}
-
-@mixin flex-basis($value: auto) {
-  flex-basis: $value;
-}
-
-@mixin flex($fg: 1, $fs: null, $fb: null) {
-  flex: $fg $fs $fb;
-}
-
-@mixin justify-content($value: flex-start) {
-  justify-content: $value;
-}
-
-@mixin align-items($value: stretch) {
-  align-items: $value;
-}
-
-@mixin align-self($value: auto) {
-  align-self: $value;
-}
-
-@mixin align-content($value: stretch) {
-  align-content: $value;
+  @media (min-width:$break-desktop) {
+    width: 960px;
+  }
 }

@@ -1,6 +1,4 @@
 .container{
-  text-align:left;
-  padding: 0 30px;
-  border: 1px solid transparent;
-  box-sizing: border-box;
+  @include container;
+  @include clearfix;
 }
