@@ -1,0 +1,17 @@
+.main-nav{
+  display: block;
+  text-align: center;
+
+  background: $bg-white;
+  outline: 2px solid rgb(88, 6, 72);
+
+  &__list{
+    margin: 0;
+    padding: 0;
+  }
+  &__item{
+    padding: 28px 0;
+    border-bottom:1px solid $border-color;
+  }
+
+}

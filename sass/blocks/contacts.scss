@@ -1,0 +1,26 @@
+.contacts {
+  padding: 30px 0;
+
+  background: rgba(237, 250, 161, 0.15);
+  outline: 2px solid rgb(230, 201, 53);
+
+  &__item{
+    outline: 2px solid rgb(191, 165, 33);
+  }
+  &__title--small {
+    font-size: 18px;
+    line-height: 30px;
+
+    outline: 2px solid rgb(191, 165, 33);
+  }
+
+  &__map {
+    position: relative;
+    width: 100%;
+    min-height: 457px;
+
+    outline: 2px solid rgb(191, 165, 33);
+
+  }
+
+}

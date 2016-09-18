@@ -1,0 +1,18 @@
+.page-header{
+  min-height: 362px;/*Временно для сетки*/
+
+  background: rgba(251, 0, 86, 0.22);
+  outline: 2px solid rgb(135, 18, 64);
+
+  &__top{
+    min-height: 80px;
+    @include clearfix;
+
+    border-bottom:1px solid #ececec;
+    border-top:1px solid #ececec;
+
+    outline: 2px solid rgb(189, 25, 34);
+
+  }
+
+}

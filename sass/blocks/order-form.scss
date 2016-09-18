@@ -1,0 +1,15 @@
+.order-form {
+    padding-bottom: 30px;
+  &__label {
+    cursor: pointer;
+    color: $black;
+    font-size: $m-font-size;
+    font-family: $base-font-bold;
+  }
+  &__title{
+    font-size: $m-font-size;
+    color: $light-mint-color;
+    text-transform: uppercase;
+    font-family: $base-font-bold;
+  }
+}

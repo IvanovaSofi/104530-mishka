@@ -2,16 +2,18 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__top">
       <div class="container">
         <a class="logo" href="index.html">
-          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип MISHKA">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
         </a>
-        <button class="nav-toggle" id="toggle"></button>
+        <button class="nav-toggle" id="toggle"><span>toggle menu</span></button>
       </div>
     </div>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
@@ -30,6 +32,7 @@
     </div>
   </header>
   <main class="page-main">
+   <div class="container">
     <p class="intro-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form" action="" method="post">
       <fieldset class="order-form__wrapper">
@@ -87,22 +90,30 @@
       </fieldset>
       <div class="order-form__footer">
         <p class="order-form__motion">Все поля обязательны для заполнения</p>
-        <button class="order-form__btn btn" type="submit"  value="Отправить заказ"></button>
+        <button class="order-form__btn btn" type="submit"  value="Отправить заказ">Отправить заказ</button>
       </div>
     </form>
-  </main>
-  <footer class="page-footer">
-    <div class="container">
-      <div class="social">
-        <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-      </div>
-      <div class="copyright">
-        Разработано:
-        <a class="btn copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="45" height="60" alt="HTML Academy"></a>
-      </div>
-    </div>
-  </footer>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="container">
+    <div class="social">
+     <a class="social-link social-link--vk" href="https://www.instagram.com/htmlacademy/">
+      <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+    </a>
+    <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">
+      <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
+    </a>
+    <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">
+      <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
+    </a>
+  </div>
+  <div class="copyright"> Разработано
+    <a class="copyright-link" href="https://twitter.com/htmlacademy_ru">
+      <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+    </a>
+  </div>
+</div>
+</footer>
 </body>
 </html>

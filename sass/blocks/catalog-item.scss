@@ -1,0 +1,40 @@
+.catalog-item {
+  width: 260px;
+  min-height: 374px;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 30px;
+  outline: 1px solid black;
+
+  &__description {
+    margin-top: 22px;
+    outline: 1px solid black;
+    padding: 0 28px;
+  }
+
+  &__description-header {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 12px;
+    outline: 1px solid red;
+  }
+
+  &__title {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    outline: 1px solid black;
+    display: block;
+  }
+  &__text{
+    font-size: $xs-font-size;
+    line-height: $m-line-height;
+    padding: 5px 0;
+
+  }
+  &__description-footer{
+    min-height: 74px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    outline: 1px solid blue;
+  }
+
+}
