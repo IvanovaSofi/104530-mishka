@@ -5,12 +5,12 @@
   padding: 30px;
   display: none;
 
-  border:1px solid $border-color;
-  box-shadow:0 5px 10px $border-color;
+  border:1px solid $border-light-gray;
+  box-shadow:0 5px 10px $border-light-gray;
 
   &__title{
-    font-size: $xxl-font-size;
-    line-height: $m-line-height;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
     font-family: $base-font-bold;
 
   }

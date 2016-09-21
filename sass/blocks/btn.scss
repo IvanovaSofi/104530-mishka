@@ -6,12 +6,12 @@
   text-decoration: none;
   cursor: pointer;
   min-width: 260px;
-  padding: 12px 30px;
-  border: 2px solid $gray;
-  color: $gray;
+  padding: $button-padding;
+  border: 2px solid $border-dark-gray;
+  color: $font-gray;
   text-transform: uppercase;
   font-family: $base-font-bold;
-  font-size: $base-font-size;
+  font-size: $base-font-size*1.7;
   &:hover,
   &--hover {}
   &:active,

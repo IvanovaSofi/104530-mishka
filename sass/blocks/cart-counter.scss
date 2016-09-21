@@ -1,7 +1,9 @@
-.cart-counter{
-  min-height: 80px;
-  border-bottom:1px solid $border-color;
-  display: flex;
-  align-items:center;
-  justify-content:center;
+.cart-counter {
+  padding: 28px 0;
+  border-bottom: 1px solid $border-light-gray;
+}
+@media (min-width:$break-tablet) {
+  .cart-counter {
+    font-size: $base-font-size*1.7;
+  }
 }

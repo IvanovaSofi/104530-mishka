@@ -1,10 +1,21 @@
-.logo{
+.logo {
   width: 86px;
-  min-height:35px;
-  display: inline-block;
-
-  vertical-align:middle;
-
+  min-height: 35px;
+  padding: 20px 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -43px;
   outline: 2px solid rgb(252, 13, 200);
+}
 
+@media (min-width:$break-tablet) {
+  .logo {
+    margin-left: -320px;
+  }
+}
+
+@media (min-width:$break-desktop) {
+  .logo {
+    margin-left: -43px;
+  }
 }

@@ -1,5 +1,5 @@
 .page-header{
-  min-height: 362px;/*Временно для сетки*/
+  //min-height: 362px;/*Временно для сетки*/
 
   background: rgba(251, 0, 86, 0.22);
   outline: 2px solid rgb(135, 18, 64);
@@ -7,6 +7,7 @@
   &__top{
     min-height: 80px;
     @include clearfix;
+    position: relative;
 
     border-bottom:1px solid #ececec;
     border-top:1px solid #ececec;
@@ -15,4 +16,10 @@
 
   }
 
+}
+@media (min-width:$break-tablet) {
+  .page-header__top {
+    min-height: 0;
+
+  }
 }

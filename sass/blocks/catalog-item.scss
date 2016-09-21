@@ -1,40 +1,67 @@
 .catalog-item {
   width: 260px;
   min-height: 374px;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-light-gray;
   margin-bottom: 30px;
   outline: 1px solid black;
+}
 
-  &__description {
-    margin-top: 22px;
+.catalog-item__description {
+  margin-top: 22px;
+  outline: 1px solid black;
+  padding: 0 28px;
+}
+
+.catalog-item__description-header {
+  border-bottom: 1px solid $border-light-gray;
+  padding-bottom: 12px;
+
+  outline: 1px solid red;
+}
+
+.catalog-item__title {
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*1.2;
+
+  outline: 1px solid black;
+  display: block;
+}
+
+.catalog-item__text {
+  font-size: $base-font-size*1.3;
+  line-height: $base-line-height*1.5;
+  padding: 5px 0;
+}
+
+.catalog-item__description-footer {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 1px solid blue;
+}
+
+@media (min-width:$break-tablet) {
+  .catalog-item {
+    width: 640px;
+    display: flex;
+    min-height: 334px;
+  }
+  .catalog-item__picture-link{
+    width: 320px;
+
     outline: 1px solid black;
-    padding: 0 28px;
   }
 
-  &__description-header {
-    border-bottom: 1px solid $border-color;
-    padding-bottom: 12px;
-    outline: 1px solid red;
-  }
-
-  &__title {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    outline: 1px solid black;
+}
+@media (min-width:$break-desktop){
+  .catalog-item{
+    width: 316px;
     display: block;
   }
-  &__text{
-    font-size: $xs-font-size;
-    line-height: $m-line-height;
-    padding: 5px 0;
+  .catalog-item__picture-link{
+    width: 316px;
+  }
 
-  }
-  &__description-footer{
-    min-height: 74px;
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    outline: 1px solid blue;
-  }
 
 }
