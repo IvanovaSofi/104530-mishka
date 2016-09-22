@@ -14,7 +14,7 @@
     border-bottom: 1px solid $border-light-gray;
   }
 
-  .main-nav__list--extra {
+  .extra-nav__list {
     display: none;
   }
 
@@ -24,7 +24,7 @@
     justify-content: flex-end;
     width: auto;
     min-height: 60px;
-    padding-right: calc((100% - 640px)/2);
+    padding-right: calc((100% - 768px)/2);
   }
 
   .main-nav__list {
@@ -44,21 +44,27 @@
 @media (min-width:$break-desktop) {
 
   .main-nav {
-    padding-right: calc((100% - 960px)/2);
+    justify-content: space-between;
+    padding-right: calc((100% - 1150px)/2);
+    padding-left: calc((100% - 1150px)/2);
   }
 
   .main-nav__list {
-    margin-left: -480px;
-    top:0;
-
+    position: static;
+    margin: 0;
     font-size: $base-font-size*1.7;
+
   }
 
-  .main-nav__list--extra {
+  .extra-nav__list {
     display: inline-block;
-    top: 80px;
+    position: absolute;
+    top: 108px;
 
     font-size: $base-font-size*1.5;
-
+  }
+  .extra-nav__item{
+    display: inline-block;
+    padding-right: 35px;
   }
 }

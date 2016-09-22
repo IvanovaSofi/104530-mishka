@@ -7,3 +7,9 @@
 
   }
 }
+
+@media (min-width:$break-desktop) {
+.search-form{
+  margin-left: auto;
+}
+}
