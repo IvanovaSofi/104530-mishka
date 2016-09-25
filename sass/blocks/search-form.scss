@@ -1,8 +1,15 @@
 .search-form{
-  min-height: 80px;
+  padding: 25px 0; /*Временно для сетки*/
   border-bottom:1px solid #ececec;
-  display: flex;
-  align-items:center;
-  justify-content:center;
+}
+@media (min-width:$break-tablet) {
+  .search-form {
 
+  }
+}
+
+@media (min-width:$break-desktop) {
+.search-form{
+  margin-left: auto;
+}
 }

@@ -28,7 +28,7 @@ ul, ol {
 }
 
 a {
-  color: $black;
+  color: $font-black;
   text-decoration:none;
   display: inline-block;
   font-family: $base-font-bold;
@@ -38,13 +38,13 @@ a {
 }
 
 h1{
-  font-size: $xxxl-font-size;
-  line-height: $m-line-height;
+  font-size: $base-font-size*5.3;
+  line-height: $base-line-height*2.85;
   font-family: $base-font-bold;
 }
 
 h2{
-  font-size: $xxl-font-size;
-  line-height: $m-line-height;
+  font-size: $base-font-size*4.3;
+  line-height: $base-line-height*2.5;
   font-family: $base-font-bold;
 }

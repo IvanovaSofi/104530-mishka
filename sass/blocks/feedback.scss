@@ -1,37 +1,81 @@
 .feedback {
-  margin:30px 0;
+  margin: 30px 0;
   border: 1px solid transparent;
-
   outline: 2px solid rgba(95, 224, 237, 0.97);
   box-sizing: border-box;
+}
 
-  &__wrapper {
-      background: rgba(0, 186, 255, 0.16);
-      outline: 2px solid rgba(20, 171, 186, 0.97);
+.feedback__wrapper {
+  background: rgba(0, 186, 255, 0.16);
+  outline: 2px solid rgba(20, 171, 186, 0.97);
+}
+
+.feedback__text{
+  font-size: $base-font-size*1.5;
+  line-height: $base-line-height*1.5;
+}
+
+.feedback__author {
+  display: block;
+}
+.feedback__text{
+  padding: 28px 0;
+}
+.feedback__title {
+  margin: 0;
+  outline: 2px solid rgba(13, 129, 140, 0.97);
+}
+
+.feedback__author-name {
+  font-size: $base-font-size*1.8;
+  line-height: $base-line-height*1.2;
+  font-style: normal;
+  font-family: $base-font-bold;
+  outline: 1px solid black;
+}
+
+.feedback__author-tag {
+  font-size: $base-font-size*1.8;
+  line-height: $base-line-height*1.2;
+  font-style: normal;
+  font-family: $base-font;
+  outline: 1px solid black;
+}
+
+@media (min-width:$break-tablet){
+  .feedback__wrapper{
+    position: relative;
   }
-
-  &__author {
-    margin: 25px 0;
+  .feedback__title{
+    font-size: $base-font-size*4.3;
+    line-height: $base-line-height*2.5;
+  }
+  .feedback__item{
+  @include clearfix;
+  }
+  .feedback__list{
+    font-size: $base-font-size*1.7;
+    line-height: $base-line-height*1.5;
+  }
+  .feedback__text{
+    padding: 50px 0;
+    font-size: $base-font-size*1.7;
+    line-height: $base-line-height*1.5;
+  }
+  .feedback__btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .feedback__author{
+    width: 320px;
+    margin-bottom: 0;
+    float: left;
 
   }
-
-  &__title{
-    outline: 2px solid rgba(13, 129, 140, 0.97);
-  }
-
-  &__author-name {
-    font-size: $l-font-size;
-    line-height: $base-line-height;
-    font-style: normal;
-    font-family: $base-font-bold;
-    outline: 1px solid black;
-  }
-
-  &__author-tag {
-    font-size: $l-font-size;
-    line-height: $base-line-height;
-    font-style: normal;
-    font-family: $base-font;
-    outline: 1px solid black;
+}
+@media (min-width:$break-desktop){
+  .feedback__author{
+    width: 500px;
   }
 }

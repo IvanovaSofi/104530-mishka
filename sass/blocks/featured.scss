@@ -1,71 +1,182 @@
 .featured {
   padding: 20px 0;
-
   background: rgba(144, 242, 175, 0.25);
   outline: 2px solid rgb(77, 240, 62);
+}
 
-  &__header {
-    outline: 1px solid black;
-    border-top: 1px solid transparent;
+.featured__header {
+  outline: 1px solid black;
+  border-top: 1px solid transparent;
+  outline: 2px solid rgb(17, 150, 79);
+}
 
-    outline: 2px solid rgb(17, 150, 79);
+.featured__wrapper {
+  padding: 18px 0;
+}
+
+.featured__description {
+  font-size: $base-font-size*1.5;
+  line-height: $base-line-height*1.2;
+
+  outline: 2px solid rgb(17, 150, 79);
+}
+
+.featured__title {
+  margin: 5px 0;
+
+  font-size: $base-font-size*2.5;
+  line-height: $base-line-height*1.5;
+
+  outline: 2px solid rgb(34, 115, 79);
+}
+
+.featured__tag {
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height;
+
+  text-transform: uppercase;
+  color: $bg-light-mint;
+  font-family: $base-font-bold;
+
+  outline: 2px solid rgb(17, 150, 79);
+}
+
+.featured__properties {
+  margin: 15px 0 30px;
+  border-collapse: collapse;
+
+}
+
+.featured__name {
+  padding: 7px 30px 8px 0;
+  border-bottom: 1px solid $border-light-gray;
+}
+
+.featured__value {
+  padding: 7px 30px 8px 0;
+  border-bottom: 1px solid $border-light-gray;
+}
+
+.featured__img {
+  width: 260px;
+  height: 315px;
+  outline: 2px solid rgb(17, 150, 79);
+}
+
+.featured__footer {
+  padding: 24px 0;
+
+  color: $font-gray;
+  text-align: center;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*1.2;
+  font-family: $base-font-bold;
+
+  outline: 2px solid rgb(17, 150, 79);
+}
+
+.featured__btn {
+  margin-top: 25px;
+  outline: 2px solid rgb(17, 150, 79);
+}
+
+@media (min-width:$break-tablet) {
+  .featured__wrapper{
+    @include clearfix;
+  }
+  .featured__header {
+    @include clearfix;
   }
 
-  &__description {
-    margin: 18px 0;
+  .featured__title {
+    float: left;
 
-    outline: 2px solid rgb(17, 150, 79);
+    font-size: $base-font-size*4.3;
+    line-height: $base-line-height*2.5;
   }
 
-  &__title {
-    margin: 5px 0;
-
-    outline: 2px solid rgb(34, 115, 79);
+  .featured__tag {
+    float: right;
   }
 
-  &__tag {
-    font-size: $m-font-size;
-    text-transform: uppercase;
-    color: $light-mint-color;
-    font-family: $base-font-bold;
+  .featured__description {
+    width: 320px;
+    min-height: 299px;
+    margin: 0;
+    float: left;
+
+    font-size: $base-font-size*1.7;
+    line-height: $base-line-height*2;
+
   }
 
-  &__properties {
-    margin: 15px 0 30px 0;
-    border-collapse: collapse;
+  .featured__properties{
+    font-size: $base-font-size*1.5;
+    line-height: $base-line-height*1.2;
   }
 
-  &__name {
-    padding: 7px 30px 8px 0;
-    border-bottom:1px solid $border-gray;
+  .featured__img {
+    min-height: 400px;
+    width: 320px;
+    float: right;
   }
 
-  &__value {
-    padding: 7px 30px 8px 0;
-    border-bottom:1px solid $border-gray;
+  .featured__footer {
+    min-height: 100px;
+    width: 320px;
+    float: left;
+    clear: left;
+    padding: 0;
+    text-align: left;
+
+    font-size: $base-font-size*2;
+    line-height: $base-line-height*1.2;
+  }
+}
+@media (min-width:$break-desktop) {
+  .featured__wrapper{
+    position: relative;
+    margin: 70px 0;
+    font-size: $base-font-size*1.7;
   }
 
-  &__img {
-    width:260px;
-    height:315px;
-
-    outline: 2px solid rgb(17, 150, 79);
+  .featured__description{
+    margin-left: 175px;
+    min-height: 348px;
   }
 
-  &__footer {
-    margin: 24px 0 15px 0;
+  .featured__img {
+    position: absolute;
+    right:0;
+    top:0;
+    width: 525px;
+    height: 636px;
+  }
 
-    color:$font-gray;
+  .featured__footer{
+    margin-left: 175px;
+    font-size: $base-font-size*2;
+
+  }
+  .featured__header{
+    display: flex;
+    margin: 60px 0;
+
+  }
+  .featured__title {
+    order: 2;
+    font-size: $base-font-size*5.3;
+    line-height: $base-line-height*2.85;
+    z-index: 1;
+  }
+
+  .featured__tag {
+    order: 1;
+    width: 175px;
+    padding: 0 30px;
+    box-sizing: border-box;
     text-align: center;
-    font-size: $m-font-size;
-    font-family: $base-font-bold;
 
-    outline: 2px solid rgb(17, 150, 79);
   }
 
-  &__btn{
-    margin-top: 25px;
-
-    outline: 2px solid rgb(17, 150, 79);
-  }
 }

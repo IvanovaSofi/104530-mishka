@@ -1,9 +1,18 @@
 .catalog {
   margin: 30px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
   & :last-child {
     margin-bottom: 0;
+  }
+}
+@media (min-width:$break-desktop){
+  .catalog{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include container;
   }
 }
