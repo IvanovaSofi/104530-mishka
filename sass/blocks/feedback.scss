@@ -1,13 +1,13 @@
 .feedback {
   margin: 30px 0;
   border: 1px solid transparent;
-  outline: 2px solid rgba(95, 224, 237, 0.97);
+  //outline: 2px solid rgba(95, 224, 237, 0.97);
   box-sizing: border-box;
 }
 
-.feedback__wrapper {
-  background: rgba(0, 186, 255, 0.16);
-  outline: 2px solid rgba(20, 171, 186, 0.97);
+.feedback__title {
+  font-size: $base-font-size*2.5;
+  line-height: $base-line-height*1.5;
 }
 
 .feedback__text{
@@ -19,19 +19,20 @@
   display: block;
 }
 .feedback__text{
-  padding: 28px 0;
+  padding: 24px 0;
 }
 .feedback__title {
   margin: 0;
-  outline: 2px solid rgba(13, 129, 140, 0.97);
+  //outline: 2px solid rgba(13, 129, 140, 0.97);
 }
 
 .feedback__author-name {
+  margin-bottom: 4px;
   font-size: $base-font-size*1.8;
   line-height: $base-line-height*1.2;
   font-style: normal;
   font-family: $base-font-bold;
-  outline: 1px solid black;
+  //outline: 1px solid black;
 }
 
 .feedback__author-tag {
@@ -39,43 +40,92 @@
   line-height: $base-line-height*1.2;
   font-style: normal;
   font-family: $base-font;
-  outline: 1px solid black;
+  //outline: 1px solid black;
+}
+.feedback__btn{
+  width: 260px;
 }
 
 @media (min-width:$break-tablet){
+  .feedback{
+    position: relative;
+    &:before{
+      position: absolute;
+      content: "";
+      width: 350px;
+      height: 457px;
+      background: url("../img/feedback.jpg");
+      top: 0;
+      left: -50px;
+    }
+  }
   .feedback__wrapper{
     position: relative;
+    padding: 77px 0;
   }
   .feedback__title{
     font-size: $base-font-size*4.3;
     line-height: $base-line-height*2.5;
   }
   .feedback__item{
-  @include clearfix;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+  .feedback__author-name{
+    margin-bottom: 7px;
+  }
+
   .feedback__list{
     font-size: $base-font-size*1.7;
     line-height: $base-line-height*1.5;
   }
   .feedback__text{
-    padding: 50px 0;
+    padding-top: 48px;
+    padding-bottom: 57px;
     font-size: $base-font-size*1.7;
     line-height: $base-line-height*1.5;
   }
   .feedback__btn{
     position: absolute;
-    top: 0;
+    width: 175px;
+    top: 80px;
     right: 0;
   }
   .feedback__author{
     width: 320px;
     margin-bottom: 0;
-    float: left;
+
 
   }
 }
 @media (min-width:$break-desktop){
+  .feedback{
+    margin-top:64px;
+    margin-bottom: 120px;
+    &:before{
+      left: 0;
+    }
+  }
+
+  .feedback__wrapper{
+    padding: 44px 0;
+  }
+  .feedback__text{
+    padding-top: 18px;
+    padding-bottom: 39px;
+  }
+
   .feedback__author{
     width: 500px;
+  }
+  .feedback__title{
+    padding-left: 175px;
+    font-size: $base-font-size*5.3;
+    line-height: $base-line-height*5.7;
+  }
+  .feedback__list{
+    padding-left: 175px;
   }
 }

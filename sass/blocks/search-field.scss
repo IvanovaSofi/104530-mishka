@@ -1,0 +1,16 @@
+.search-field {
+  padding: 28px 0;
+  //border-bottom: 1px solid $border-light-gray;
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*1.2;
+}
+@media (min-width:$break-tablet) {
+  .search-field {
+    font-size: 0;
+    width: 84px;
+    height: 80px;
+    padding: 0;
+    //border-right: 1px solid $border-light-gray;
+    border-left: 1px solid $border-light-gray;
+  }
+}

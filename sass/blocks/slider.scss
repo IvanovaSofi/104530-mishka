@@ -3,8 +3,8 @@
 .slider__arrows {
 
  @include clearfix;
- margin: 30px 0;
-  outline: 2px solid black;
+ margin: 36px 0;
+  //outline: 2px solid black;
 }
 
 .slider__prev {
@@ -31,7 +31,12 @@
 
   }
   .slider__arrows{
-    float: right;
+    width: 167px;
     margin: 0;
+  }
+  .slider__prev, .slider__next {
+    width: 80px;
+    height: 62px;
+    border: none;
   }
 }

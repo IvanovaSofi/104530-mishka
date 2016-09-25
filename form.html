@@ -8,26 +8,34 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__top">
-      <div class="container">
-        <a class="logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
-        </a>
-        <button class="nav-toggle" id="toggle"><span>toggle menu</span></button>
-      </div>
-    </div>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+  <button class="main-nav__toggle" type="button" id="toggle"></button>
+      <ul class="main-nav__list  main-nav__list--inner">
+        <li class="main-nav__item">
+          <a class="logo" href="index.html"> <img src="img/logo-mobile.svg" width="86" height="45" alt="Логотип MISHKA"> </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--extra">
+          <a class="main-nav__link  main-nav__link--extra" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--extra">
+          <a class="main-nav__link  main-nav__link--extra" href="#">Распродажа</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="search-field" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="cart-counter" href="#">Корзина: пока пуста</a>
+        </li>
       </ul>
-      <form class="search-form" action="" method="post">
-        <input class="search-form__search" type="search"  placeholder="Поиск по сайту">
-        <button class="search-form__submit" type="submit"></button>
-      </form>
-      <a class="cart-counter" href="#">Корзина: пока пуста</a>
     </nav>
     <div class="intro">
+      <p class="intro-trigger">Бесплатная доставка по России</p>
       <h1 class="intro__title">Вязание на заказ</h1>
     </div>
   </header>
@@ -103,23 +111,43 @@
 </main>
 <footer class="page-footer">
   <div class="container">
-    <div class="social">
-     <a class="social-link social-link--vk" href="https://www.instagram.com/htmlacademy/">
-      <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
-    </a>
-    <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">
-      <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
-    </a>
-    <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">
-      <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
-    </a>
+    <div class="page-footer__wrapper">
+      <a class="logo  logo--footer" href="index.html"> <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA"> </a>
+      <div class="social">
+        <a class="social-link social-link--vk" href="https://www.instagram.com/htmlacademy/">
+          <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+        </a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">
+          <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
+        </a>
+        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">
+          <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
+        </a>
+      </div>
+
+      <div class="copyright"> Разработано
+        <a class="copyright-link" href="https://twitter.com/htmlacademy_ru">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="copyright"> Разработано
-    <a class="copyright-link" href="https://twitter.com/htmlacademy_ru">
-      <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-    </a>
-  </div>
-</div>
 </footer>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 </body>
 </html>

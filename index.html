@@ -10,31 +10,42 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__top">
+    <!--  <div class="page-header__top">
       <div class="container">
-        <a class="logo"> <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA"> </a>
-        <button class="nav-toggle" type="button" id="toggle"><span>toggle menu</span></button>
+
       </div>
-    </div>
+    </div>-->
+
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button" id="toggle"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+        <li class="main-nav__item">
+          <a class="logo"> <img src="img/logo-mobile.svg" width="86" height="45" alt="Логотип MISHKA"> </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--extra">
+          <a class="main-nav__link  main-nav__link--extra" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--extra">
+          <a class="main-nav__link  main-nav__link--extra" href="#">Распродажа</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="search-field" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="cart-counter" href="#">Корзина: пока пуста</a>
+        </li>
       </ul>
-
-      <ul class="extra-nav__list">
-        <li class="extra-nav__item"><a href="#">Новые поступления</a></li>
-        <li class="extra-nav__item"><a href="#">Распродажа</a></li>
-      </ul>
-
-      <form class="search-form" action="" method="post">
-        <input class="search-form__search" type="search" placeholder="Поиск по сайту">
-        <button class="search-form__submit" type="submit"></button>
-      </form>
-      <a class="cart-counter" href="#">Корзина: пока пуста</a>
     </nav>
     <div class="intro intro--image">
-      <h1 class="intro__title">Милые штуки ручной работы для дома</h1> </div>
+      <p class="intro-trigger">Бесплатная доставка по России</p>
+      <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
+    </div>
   </header>
   <main class="page-main">
     <ul class="category">
@@ -64,7 +75,6 @@
                 <td class="featured__name">Высота:</td>
                 <td class="featured__value">15 см</td>
               </tr>
-
             </table>
           </div>
           <figure class="featured__img"> <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки"> </figure>
@@ -111,8 +121,8 @@
                   лайков!
                 </p>
                 <cite class="feedback__author">
-                      <div class="feedback__author-name">Анастасия Красильникова</div>
-                      <div class="feedback__author-tag">@misssssiskras</div>
+                      <p class="feedback__author-name">Анастасия Красильникова</p>
+                      <p class="feedback__author-tag">@misssssiskras</p>
                   </cite>
                 <div class="slider__arrows">
                   <button class="slider__prev"></button>
@@ -127,47 +137,51 @@
     </section>
     <section class="contacts">
       <div class="container">
-        <h2 class="contacts__title contacts__title--small">Контакты</h2>
+        <h2 class="contacts__title  contacts__title--small">Контакты</h2>
         <div class="contacts__wrapper">
           <div class="contacts__item">
-            <span>e-mail:</span>
+            <span class="contacts__field">e-mail:</span>
             <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </div>
           <div class="contacts__item">
-            <span>адрес:</span>
-            <a class="contacts__link" href="#">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</a>
+            <span class="contacts__field">адрес:</span>
+            <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </div>
         </div>
       </div>
       <div class="contacts__map"><img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта"></div>
-      <div class="contacts__wrapper">
-        <a class="contacts__btn btn" href="#">Напишите нам</a>
+      <div class="contacts__wrapper  contacts__wrapper--left">
+        <a class="contacts__btn  btn" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="container">
-      <div class="social">
-        <a class="social-link social-link--vk" href="https://www.instagram.com/htmlacademy/">
-          <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
-        </a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">
-          <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
-        </a>
-        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">
-          <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
-        </a>
-      </div>
-      <div class="copyright"> Разработано
-        <a class="copyright-link" href="https://twitter.com/htmlacademy_ru">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-        </a>
+      <div class="page-footer__wrapper">
+        <a class="logo  logo--footer"> <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA"> </a>
+        <div class="social">
+          <a class="social-link social-link--vk" href="https://www.instagram.com/htmlacademy/">
+            <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+          </a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">
+            <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
+          </a>
+          <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">
+            <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
+          </a>
+        </div>
+
+        <div class="copyright"> Разработано
+          <a class="copyright-link" href="https://twitter.com/htmlacademy_ru">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
   <div class="overlay overlay--hidden"></div>
   <div class="modal">
-    <b class="modal__title">Добавить в корзину</b>
+    <b class="modal__title">Добавить<br> в корзину</b>
     <form class="modal-form" action="" method="post">
       <p class="modal-form__motion">Выберите размер:</p>
       <div class="modal-form__fields">
@@ -181,7 +195,22 @@
       <button class="modal-form__btn btn" type="submit" value="Добавить">Добавить</button>
     </form>
   </div>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

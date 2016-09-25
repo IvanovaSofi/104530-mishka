@@ -8,11 +8,19 @@
     margin-bottom: 0;
   }
 }
+@media (min-width:$break-tablet){
+  .catalog{
+    margin-top: 78px;
+    margin-bottom: 52px;
+  }
+}
 @media (min-width:$break-desktop){
   .catalog{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     @include container;
+    margin-top: 124px;
   }
 }

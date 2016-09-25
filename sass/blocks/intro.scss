@@ -1,11 +1,11 @@
 .intro {
   text-align: center;
-  min-height: 177px;
   background: $bg-light-gray;
+  padding: 73px 0;
 
   &--image {
-    min-height: 373px;
-    background: url("../img/hero-mobile@1x.jpg") no-repeat center bottom;
+    min-height: 282px;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat center center, $bg-inner;
     padding: 70px 30px 0;
   }
 }
@@ -20,35 +20,65 @@
   font-size: $base-font-size*2.7;
   line-height: $base-line-height*1.5;
   margin: 0;
+}
 
+.intro-trigger{
+  display: none;
 }
 @media (min-width:$break-tablet) {
   .intro {
-    min-height: 226px;
+    padding: 39px 0 80px;
+    position: relative;
+    //padding: 73px 0;
 
     &--image {
-      padding-top: 152px;
-      min-height: 745px;
+      padding-top: 98px;
+      min-height: 665px;
+      text-align: right;
+      box-sizing: border-box;
     }
   }
 
   .intro__title {
+    @include container;
+    //margin-top: 112px;
+    text-align: center;
     font-size: $base-font-size*4.3;
     line-height: $base-line-height*2.5;
   }
   .intro-text{
     font-size: $base-font-size*1.7;
     line-height: $base-line-height*1.5;
-    padding-top: 82px;
+    padding-top: 70px;
+  }
+  .intro-trigger{
+    display: block;
+    position: absolute;
+    content:"";
+    top:-40px;
+    right: calc((100% - 668px)/2);
+    width: auto;
+    height: 24px;
+
+    font-size: $base-font-size*1.5;
+    line-height: $base-line-height*1.2;
   }
 }
 @media (min-width:$break-desktop) {
+  .intro {
+    padding-bottom: 104px;
+  }
   .intro__title {
+    width: 700px;
+    //margin-top: 55px;
     font-size: $base-font-size*5.3;
     line-height: $base-line-height*2.85;
   }
   .intro-text{
-    padding-left: 175px;
-    padding-top: 135px;
+    padding: 0 175px;
+    padding-top: 120px;
+  }
+  .intro-trigger{
+    right: calc((100% - 1050px)/2);
   }
 }

@@ -9,19 +9,22 @@ $bg-white:#ffffff;
 $bg-gray:#444444;
 $bg-black:#000000;
 $bg-light-gray:#f1f1f1;
+$bg-inner:#f9f9f9;
 $bg-light-mint:#63d1bb;
 $bg-dark-mint:#56c3b2;
 
 $font-white:#ffffff;
 $font-black:#000000;
 $font-gray:#444444;
+$font-light-mint:#63d1bb;
 
 
 $border-light-gray:#ececec;
 $border-dark-gray:#444444;
 $border-black:#000000;
 
+$mobile-widths-only: 767px;
 $break-tablet:768px;
 $break-desktop:1150px;
 
-$button-padding: 12px 30px;
+$button-padding: 14px 30px;

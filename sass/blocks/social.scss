@@ -2,3 +2,8 @@
   text-align: center;
   border-bottom:1px solid $border-light-gray;
 }
+@media (min-width:$break-tablet){
+  .social{
+    border: none;
+  }
+}
