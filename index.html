@@ -79,7 +79,7 @@
           </div>
           <figure class="featured__img"> <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки"> </figure>
           <div class="featured__footer">
-            <p>Цена: 990 руб.</p> <a class="featured__btn btn" href="#">Заказать</a> </div>
+            <p>Цена: 990 руб.</p> <a class="featured__btn btn popup" href="#">Заказать</a> </div>
         </div>
       </div>
     </section>
@@ -180,7 +180,7 @@
     </div>
   </footer>
   <div class="overlay overlay--hidden"></div>
-  <div class="modal">
+  <div class="modal modal--hidden">
     <b class="modal__title">Добавить<br> в корзину</b>
     <form class="modal-form" action="" method="post">
       <p class="modal-form__motion">Выберите размер:</p>
@@ -198,6 +198,9 @@
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
+    var modal = document.querySelector('.modal');
+    var overlay = document.querySelector('.overlay');
+    var popup = document.querySelector('.popup');
 
     navMain.classList.remove('main-nav--nojs');
 
@@ -209,6 +212,16 @@
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
       }
+    });
+
+    popup.addEventListener('click', function() {
+      overlay.classList.remove('overlay--hidden');
+      modal.classList.remove('modal--hidden');
+    });
+
+    overlay.addEventListener('click', function() {
+      overlay.classList.add('overlay--hidden');
+      modal.classList.add('modal--hidden');
     });
   </script>
 </body>

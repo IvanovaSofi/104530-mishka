@@ -54,7 +54,7 @@
           </div>
           <div class="catalog-item__description-footer">
             <span class="catalog-item__price">1 200 руб.</span>
-            <a href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
+            <a class="popup" href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
           </div>
         </div>
       </article>
@@ -69,7 +69,7 @@
           </div>
           <div class="catalog-item__description-footer">
             <span class="catalog-item__price">690 руб.</span>
-            <a href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
+            <a class="popup" href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
           </div>
         </div>
       </article>
@@ -84,7 +84,7 @@
           </div>
           <div class="catalog-item__description-footer">
             <span class="catalog-item__price">1 500 руб.</span>
-            <a href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
+            <a class="popup" href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
           </div>
         </div>
       </article>
@@ -130,7 +130,7 @@
     </div>
   </footer>
   <div class="overlay overlay--hidden"></div>
-  <div class="modal">
+  <div class="modal  modal--hidden">
     <b class="modal__title">Добавить<br> в корзину</b>
     <form class="modal-form" action="" method="post">
       <p class="modal-form__motion">Выберите размер:</p>
@@ -148,6 +148,9 @@
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
+    var modal = document.querySelector('.modal');
+    var overlay = document.querySelector('.overlay');
+    var popup = document.querySelector('.popup');
 
     navMain.classList.remove('main-nav--nojs');
 
@@ -159,6 +162,16 @@
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
       }
+    });
+
+    popup.addEventListener('click', function() {
+      overlay.classList.remove('overlay--hidden');
+      modal.classList.remove('modal--hidden');
+    });
+
+    overlay.addEventListener('click', function() {
+      overlay.classList.add('overlay--hidden');
+      modal.classList.add('modal--hidden');
     });
   </script>
 </body>

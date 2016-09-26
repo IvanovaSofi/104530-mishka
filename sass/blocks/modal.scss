@@ -5,11 +5,22 @@
   width: 320px;
   height: 354px;
   box-sizing: border-box;
+  position: fixed;
+  margin: auto;
   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
   padding: 30px;
   text-align: center;
   border: 1px solid $border-light-gray;
+  background: $bg-white;
   box-shadow: 0 5px 10px $border-light-gray;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .modal__title {
@@ -23,11 +34,13 @@
     width: 584px;
     height: 354px;
   }
-.modal__title{
-  font-size: $base-font-size*3;
-  line-height: $base-line-height*2.85;
-}
-.modal__title br{
-  display: none;
-}
+
+  .modal__title {
+    font-size: $base-font-size*3;
+    line-height: $base-line-height*2.85;
+  }
+
+  .modal__title br {
+    display: none;
+  }
 }
