@@ -75,6 +75,11 @@
     width: 316px;
     display: block;
   }
+  .catalog-item:after
+  {
+    content: "";
+    flex: auto;
+  }
   .catalog-item__picture-link{
     width: 316px;
     height: 462px;
@@ -84,6 +89,6 @@
     padding: 26px 28px 0;
   }
   .catalog-item__description-header{
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
 }
 }

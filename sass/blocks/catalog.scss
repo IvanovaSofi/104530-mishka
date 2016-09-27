@@ -1,17 +1,13 @@
 .catalog {
-  margin: 30px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  & :last-child {
-    margin-bottom: 0;
-  }
 }
 @media (min-width:$break-tablet){
   .catalog{
     margin-top: 78px;
-    margin-bottom: 52px;
   }
 }
 @media (min-width:$break-desktop){
@@ -19,7 +15,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     @include container;
     margin-top: 124px;
   }
