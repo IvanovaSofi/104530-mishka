@@ -4,6 +4,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   @include container;
+  &:after{
+    content:"";
+    height:0;
+    width:33.334%;
+  }
 }
 @media (min-width:$break-tablet){
   .catalog{

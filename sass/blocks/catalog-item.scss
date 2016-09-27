@@ -73,12 +73,7 @@
 @media (min-width:$break-desktop){
   .catalog-item{
     width: 316px;
-    display: block;
-  }
-  .catalog-item:after
-  {
-    content: "";
-    flex: auto;
+    flex-wrap: wrap;
   }
   .catalog-item__picture-link{
     width: 316px;
