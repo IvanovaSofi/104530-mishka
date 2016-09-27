@@ -1,0 +1,38 @@
+.modal-form__motion {
+  font-size: $base-font-size*1.5;
+  line-height: $base-line-height*1.5;
+}
+.modal-form__fields{
+  padding: 30px 0;
+}
+.modal-form__toggle{
+  display: inline-block;
+  width: 82px;
+  height: 52px;
+  padding: 12px 0;
+  box-sizing: border-box;
+
+  font-size: $base-font-size*1.7;
+  line-height: $base-line-height*1.5;
+  font-family: $base-font-bold;
+
+  border: 2px solid $border-light-gray;
+}
+.modal-form__btn{
+  width: 100%;
+  background: $bg-light-mint;
+  border: none;
+  color: $font-white;
+}
+.modal-form input[type="radio"]:checked+label {
+  border: 2px solid $bg-light-mint;
+}
+
+@media (min-width:$break-tablet){
+.modal-form__toggle{
+  width: 112px;
+}
+.modal-form__motion{
+  font-size: $base-font-size*1.7;
+}
+}

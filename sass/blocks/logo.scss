@@ -1,21 +1,32 @@
 .logo {
   width: 86px;
-  min-height: 35px;
-  padding: 20px 0;
-  position: absolute;
-  left: 50%;
-  margin-left: -43px;
-  outline: 2px solid rgb(252, 13, 200);
-}
+  //height: 80px;
+  //padding: 20px 0;
+  //position: absolute;
+  display: block;
+  margin: 15.5px auto;
 
+  &--footer{
+    display: none;
+  }
+}
 @media (min-width:$break-tablet) {
   .logo {
-    margin-left: -320px;
+    margin: 19.5px 0;
+    &--footer{
+      display: block;
+      margin: 0;
+      position: static;
+      flex-basis: 186px;
+    }
   }
 }
 
 @media (min-width:$break-desktop) {
   .logo {
-    margin-left: -43px;
+   margin: 19.5px auto;
+   &--footer{
+     margin: 0;
+   }
   }
 }

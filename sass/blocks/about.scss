@@ -1,19 +1,29 @@
 .about {
-  padding: 10px 0;
-  background: rgba(125, 181, 233, 0.24);
-  outline: 2px solid rgb(69, 148, 205);
+  padding-top: 22px;
+  padding-bottom: 30px;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 11.5px;
+    background: url("../img/zigzag-line.svg");
+    background-size: 19px 11.5px;
+    background-repeat: repeat;
+
+    bottom: 0;
+    z-index: 2;
+  }
 }
 
-.about__wrapper {
-  background: rgba(26, 34, 228, 0.24);
-  outline: 2px solid rgb(48, 54, 193);
-}
 .about__item{
   width: 260px;
   padding: 15px 0;
 }
 .about__title {
-  outline: 2px solid rgb(69, 148, 205);
+  font-size: $base-font-size*2.5;
+  line-height: $base-line-height*1.5;
+  margin:0;
 }
 
 .about__icon {
@@ -21,23 +31,40 @@
   min-height: 60px;
   margin-top: 10px;
   display: inline-block;
-  outline: 2px solid rgb(69, 148, 205);
 }
 
 .about__text {
   font-size: $base-font-size*1.7;
   line-height: $base-line-height;
   font-family: $base-font-bold;
-  outline: 2px solid rgb(69, 148, 205);
 }
 
 @media (min-width:$break-tablet) {
+  .about{
+    padding: 20px 0;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 23px;
+      background: url("../img/zigzag-line.svg");
+      background-size: 38px 23px;
+      background-repeat: repeat;
+
+      bottom: 0px;
+      z-index: 2;
+    }
+
+  }
   .about__wrapper{
     display: flex;
     flex-wrap: wrap;
   }
   .about__item{
     width: 320px;
+  .about__icon{
+    outline: 2px solid rgb(69, 148, 205);
+  }
   }
   .about__text{
     font-size: $base-font-size*2;
@@ -50,13 +77,29 @@
 }
 
 @media (min-width:$break-desktop){
+  .about{
+    &:after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 34px;
+      background: url("../img/zigzag-line.svg");
+      background-size: 56px 34px;
+      background-repeat: repeat;
+
+      bottom: 0px;
+      z-index: 2;
+    }
+  }
+
   .about__wrapper{
-    padding-right: 175px;
+    padding-left: 175px;
   }
   .about__item{
     width: 350px;
   }
   .about__title{
+    padding-left: 175px;
     font-size: $base-font-size*5.3;
     line-height: $base-line-height*5.7;
 

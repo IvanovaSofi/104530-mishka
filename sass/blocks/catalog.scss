@@ -1,11 +1,18 @@
 .catalog {
-  margin: 30px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  & :last-child {
-    margin-bottom: 0;
+  @include container;
+  &:after{
+    content:"";
+    height:0;
+    width:33.334%;
+  }
+}
+@media (min-width:$break-tablet){
+  .catalog{
+    margin-top: 78px;
   }
 }
 @media (min-width:$break-desktop){
@@ -14,5 +21,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     @include container;
+    margin-top: 124px;
   }
 }

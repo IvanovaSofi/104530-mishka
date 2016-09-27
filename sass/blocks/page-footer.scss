@@ -1,3 +1,11 @@
 .page-footer{
   background: $bg-light-gray;
 }
+@media (min-width:$break-tablet){
+  .page-footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 0;
+  }
+}
