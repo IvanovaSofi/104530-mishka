@@ -8,6 +8,9 @@
 }
 
 .category__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 23px 70% 30px 30px;
   color: $font-white;
   font-size: $base-font-size*1.9;
@@ -15,11 +18,19 @@
   display: block;
 
   &--first {
-    background: $bg-light-mint;
+    background-color: $bg-light-mint;
+    background-image: url("../img/icon-interior.svg");
+    background-size: 41px 62px;
+    background-repeat: no-repeat;
+    background-position:90% 65%;
   }
 
   &--second {
-    background: $bg-dark-mint;
+    background-color: $bg-dark-mint;
+    background-image: url("../img/icon-toy.svg");
+    background-size: 61px 61px;
+    background-repeat: no-repeat;
+    background-position:92% 65%;
   }
 }
 
@@ -43,6 +54,12 @@
     padding: 30px 70% 31px 33px;
     font-size: $base-font-size*2;
     line-height: $base-line-height*1.5;
+    &--first{
+      background-position:90% 50%;
+    }
+    &--second{
+      background-position:92% 50%;
+    }
   }
 }
 @media (min-width:$break-desktop) {

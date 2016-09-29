@@ -1,22 +1,19 @@
 .cart-counter {
+
   position: relative;
   display: block;
-  padding: 28px 0;
+  padding: 26px 0 26px 58px;
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*1.2;
 }
-/*.cart-counter:before{
-  position: absolute;
-  content: "";
-  width: 21px;
-  height: 18px;
-  background: url("../img/cart.svg");
-  top:0;
-  z-index: 4;
-}*/
+.cart-counter svg{
+  position: relative;
+  top:2px;
+  right: 24px;
+}
 @media (min-width:$break-tablet) {
   .cart-counter {
-    padding-left: 84px;
+    padding: 28px 0 28px 58px;
     border-left: 1px solid $border-light-gray;
   }
 }

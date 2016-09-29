@@ -1,6 +1,6 @@
 .logo {
   width: 86px;
-  //height: 80px;
+  height: auto;
   //padding: 20px 0;
   //position: absolute;
   display: block;
@@ -10,22 +10,31 @@
     display: none;
   }
 }
+.logo img{
+  width: 100%;
+}
 @media (min-width:$break-tablet) {
   .logo {
-    margin: 19.5px 0;
+    width: 112px;
+    //height: 46px;
+    margin: 14.5px 0;
     &--footer{
+      width: 102px;
+      height: 34px;
       display: block;
-      margin: 0;
+      margin-right: 84px;
       position: static;
-      flex-basis: 186px;
     }
   }
 }
 
 @media (min-width:$break-desktop) {
   .logo {
-   margin: 19.5px auto;
+    width: 149px;
+   margin: 0 auto;
    &--footer{
+     width: 102px;
+     height: 34px;
      margin: 0;
    }
   }

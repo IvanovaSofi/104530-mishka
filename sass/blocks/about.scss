@@ -28,8 +28,8 @@
 
 .about__icon {
   min-width: 55px;
-  min-height: 60px;
-  margin-top: 10px;
+  height: auto;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
@@ -59,13 +59,30 @@
   .about__wrapper{
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
   }
   .about__item{
     width: 320px;
-  .about__icon{
-    outline: 2px solid rgb(69, 148, 205);
+    &--01{
+      order:1;
+    }
+    &--02{
+      order:3;
+    }
+    &--03{
+      order:5;
+    }
+    &--04{
+      order:2;
+    }
+    &--05{
+      order:4;
+    }
+    &--06{
+      order:6;
+    }
   }
-  }
+
   .about__text{
     font-size: $base-font-size*2;
     line-height: $base-line-height*1.2;
