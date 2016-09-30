@@ -35,6 +35,10 @@
   line-height: $base-line-height*1.2;
   font-family: $base-font-bold;
 }
+.catalog-item__picture-link{
+  width:260px;
+  height: auto;
+}
 
 @media (min-width:$break-tablet) {
   .catalog-item {
@@ -52,7 +56,10 @@
   }
   .catalog-item__picture-link{
     width: 334px;
-    outline: 1px solid black;
+    height: auto;
+  }
+  .catalog-item__picture-link img{
+    display: block;
   }
   .catalog-item__description-header{
     padding: 0;
@@ -77,7 +84,7 @@
   }
   .catalog-item__picture-link{
     width: 316px;
-    height: 462px;
+    height: auto;
   }
   .catalog-item__description{
     width: 316px;

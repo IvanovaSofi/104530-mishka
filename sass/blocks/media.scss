@@ -60,9 +60,8 @@
 
   .media__video{
     order:1;
-    background: rgb(87, 204, 183);
-    min-height: 456px;
-    width: 668px;//Временно
+    width: 668px;
+    height:auto ;
     &:after{
       top:189px;
       left: 283px;
@@ -107,7 +106,7 @@
     position: absolute;
     content: "";
     width: 682px;
-    height: 455px;
+    height: auto;
     top:0;
     left: 0;
   }

@@ -54,7 +54,7 @@
       content: "";
       width: 350px;
       height: 457px;
-      background: url("../img/feedback.jpg");
+      background: url("../img/review@1x.jpg");
       top: 0;
       left: -50px;
     }
@@ -96,10 +96,17 @@
   .feedback__author{
     width: 320px;
     margin-bottom: 0;
-
-
   }
 }
+
+@media (min-width: $break-tablet) and (min-resolution: 144dpi),
+       (min-width: $break-tablet) and (min-resolution: 1.5dppx) {
+  .feedback:before {
+    background-image: url("../img/review@2x.jpg");
+    background-size: 350px auto;
+  }
+}
+
 @media (min-width:$break-desktop){
   .feedback{
     margin-top:64px;

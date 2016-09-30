@@ -1,6 +1,7 @@
 .featured {
   position: relative;
-  &:after{
+
+  &:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -8,7 +9,6 @@
     background: url("../img/zigzag-line.svg");
     background-size: 19px 11.5px;
     background-repeat: repeat;
-
     bottom: 0;
     z-index: 2;
   }
@@ -21,36 +21,32 @@
 .featured__description {
   font-size: $base-font-size*1.5;
   line-height: $base-line-height*1.2;
-
   //outline: 2px solid rgb(17, 150, 79);
 }
 
 .featured__title {
   margin: 5px 0;
-
   font-size: $base-font-size*2.5;
   line-height: $base-line-height*1.5;
-
   //outline: 2px solid rgb(34, 115, 79);
 }
 
 .featured__tag {
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*0.8;
-
   text-transform: uppercase;
   color: $bg-light-mint;
   font-family: $base-font-bold;
-
   //outline: 2px solid rgb(17, 150, 79);
 }
-.featured__description{
+
+.featured__description {
   margin-top: 26px;
 }
+
 .featured__properties {
   margin: 6px 0 30px;
   border-collapse: collapse;
-
 }
 
 .featured__name {
@@ -66,18 +62,16 @@
 .featured__img {
   width: 260px;
   height: 315px;
-    //outline: 2px solid rgb(17, 150, 79);
+  //outline: 2px solid rgb(17, 150, 79);
 }
 
 .featured__footer {
   padding: 24px 0;
-
   color: $font-gray;
   text-align: center;
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*1.2;
   font-family: $base-font-bold;
-
   //outline: 2px solid rgb(17, 150, 79);
 }
 
@@ -85,12 +79,11 @@
   margin-top: 25px;
   width: 260px;
 }
-
 @media (min-width:$break-tablet) {
-  .featured{
+  .featured {
     padding-bottom: 54px;
 
-    &:after{
+    &:after {
       position: absolute;
       content: "";
       width: 100%;
@@ -98,16 +91,16 @@
       background: url("../img/zigzag-line.svg");
       background-size: 38px 23px;
       background-repeat: repeat;
-
       bottom: 0;
       z-index: 2;
     }
   }
-  .featured__wrapper{
+
+  .featured__wrapper {
     display: flex;
     flex-wrap: wrap;
-
   }
+
   .featured__header {
     flex-basis: 100%;
     display: flex;
@@ -116,7 +109,6 @@
   }
 
   .featured__title {
-
     font-size: $base-font-size*4.3;
     line-height: $base-line-height*2.5;
   }
@@ -131,15 +123,13 @@
     margin-top: 45px;
     padding-right: 44px;
     box-sizing: border-box;
-  //  min-height: 299px;
+    //  min-height: 299px;
     //margin: 0;
-
     font-size: $base-font-size*1.7;
     line-height: $base-line-height*1.5;
-
   }
 
-  .featured__properties{
+  .featured__properties {
     margin: 36px 0 167px;
     font-size: $base-font-size*1.5;
     line-height: $base-line-height*1.2;
@@ -156,21 +146,22 @@
     padding: 0;
     //text-align:left;
     margin-top: -111px;
-
     font-size: $base-font-size*2;
     line-height: $base-line-height*1.2;
   }
-  .featured__btn{
+
+  .featured__btn {
     margin-top: 34px;
     width: 100%;
   }
 }
 @media (min-width:$break-desktop) {
-  .featured{
-    padding-top:72px;
+  .featured {
+    padding-top: 72px;
     padding-bottom: 80px;
   }
-  .featured:after{
+
+  .featured:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -178,14 +169,13 @@
     background: url("../img/zigzag-line.svg");
     background-size: 56px 34px;
     background-repeat: repeat;
-
     bottom: 0;
     z-index: 2;
   }
-  .featured__wrapper{
+
+  .featured__wrapper {
     display: block;
     position: relative;
-
     font-size: $base-font-size*1.7;
   }
 
@@ -196,34 +186,33 @@
     z-index: 1;
   }
 
-  .featured__description{
+  .featured__description {
     margin-left: 175px;
     width: 350px;
     padding-right: 58px;
     border: 1px solid transparent;
   }
 
-.featured__properties{
-  margin: 50px 0 96px;
-}
+  .featured__properties {
+    margin: 50px 0 96px;
+  }
+
   .featured__img {
     position: absolute;
     margin: 0;
-    right:0;
-    top:0;
-    width: 525px;//Временно
-    height: 636px;//Временно
-    outline: 1px solid black;
+    right: 0;
+    top: 0;
+    width: 525px;
+    height: 636px;
   }
 
-  .featured__footer{
-    margin: 0;
-    margin-left: 175px;
+  .featured__footer {
+    margin: 0 0 0 175px;
     width: 290px;
     font-size: $base-font-size*2;
   }
 
-  .featured__header{
+  .featured__header {
     justify-content: flex-start;
     margin: 29px 0;
   }
@@ -234,5 +223,4 @@
     padding: 0 30px;
     box-sizing: border-box;
   }
-
 }

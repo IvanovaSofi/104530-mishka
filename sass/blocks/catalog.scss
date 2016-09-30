@@ -1,9 +1,9 @@
 .catalog {
+  @include container;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  @include container;
   &:after{
     content:"";
     height:0;

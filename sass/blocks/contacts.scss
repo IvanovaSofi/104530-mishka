@@ -6,11 +6,6 @@
   display: table;
   font-size: $base-font-size*1.5;
   line-height: $base-line-height*1.5;
-
-  &--left {
-    display: block;
-    text-align: center;
-  }
 }
 
 .contacts__title--small {
@@ -134,11 +129,6 @@
     margin-left: 175px;
     margin-right: 50px;
     margin-bottom: 47px;
-    &--left {
-      margin: 0;
-      margin-left: calc((100% - 1050px)/2);
-      padding-left: 175px;
-    }
   }
 
   .contacts__item{
@@ -164,10 +154,9 @@
     margin: 0;
     top: 72px;
     left: 50%;
-    outline: 1px solid black;
   }
 
   .contacts__btn {
-    margin: 0;
+    margin-left: 175px;
   }
 }
