@@ -1,22 +1,15 @@
 .page-header {
-  //min-height: 362px;/*Временно для сетки*/
-  //background: rgba(251, 0, 86, 0.22);
-//  outline: 2px solid rgb(135, 18, 64);
   position: relative;
   border: 1px solid transparent;
-
 }
 
 .page-header__top {
-  //min-height: 80px;
   position: relative;
   border-bottom: 1px solid #ececec;
-//  outline: 2px solid rgb(189, 25, 34);
 }
-
 @media (min-width:$break-tablet) {
-  .page-header{
-    &:after{
+  .page-header {
+    &:after {
       position: absolute;
       content: "";
       width: 100%;
@@ -24,18 +17,18 @@
       background: url("../img/zigzag.svg");
       background-size: 38px 40px;
       background-repeat: repeat;
-
       bottom: -18px;
       z-index: 2;
     }
   }
+
   .page-header__top {
     min-height: 0;
   }
 }
-@media (min-width:$break-desktop){
-  .page-header{
-    &:after{
+@media (min-width:$break-desktop) {
+  .page-header {
+    &:after {
       position: absolute;
       content: "";
       width: 100%;
@@ -43,7 +36,6 @@
       background: url("../img/zigzag.svg");
       background-size: 56px 34px;
       background-repeat: repeat;
-
       bottom: -14px;
       z-index: 2;
     }

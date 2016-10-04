@@ -1,9 +1,10 @@
-.social{
+.social {
+  padding: 5px 0;
   text-align: center;
-  border-bottom:1px solid $border-light-gray;
+  border-bottom: 1px solid $border-light-gray;
 }
-@media (min-width:$break-tablet){
-  .social{
+@media (min-width:$break-tablet) {
+  .social {
     border: none;
   }
 }

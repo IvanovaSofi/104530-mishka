@@ -1,5 +1,4 @@
 $base-font: "Open Sans","Arial", sans-serif;
-$base-font-bold: "Open Sans Bold","Arial", sans-serif;
 
 $base-font-size:10px;
 $base-line-height:20px;
@@ -22,10 +21,12 @@ $font-light-mint:#63d1bb;
 $border-light-gray:#ececec;
 $border-dark-gray:#444444;
 $border-black:#000000;
+$border-error:#f0b1b1;
 
 $mobile-widths-only: 767px;
 $break-tablet:768px;
 $break-desktop:1150px;
 
 $bg-icon:#d3d2d2;
+$bg-icon-hover:#46c1ae;
 $button-padding: 14px 30px;

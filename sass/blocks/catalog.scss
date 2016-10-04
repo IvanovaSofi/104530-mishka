@@ -4,19 +4,20 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  &:after{
-    content:"";
-    height:0;
-    width:33.334%;
+
+  &:after {
+    content: "";
+    height: 0;
+    width: 33.334%;
   }
 }
-@media (min-width:$break-tablet){
-  .catalog{
+@media (min-width:$break-tablet) {
+  .catalog {
     margin-top: 78px;
   }
 }
-@media (min-width:$break-desktop){
-  .catalog{
+@media (min-width:$break-desktop) {
+  .catalog {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

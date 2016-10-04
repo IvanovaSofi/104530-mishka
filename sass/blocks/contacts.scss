@@ -31,8 +31,17 @@
 .contacts__link {
   width: 184px;
   display: table-cell;
-  font-family: $base-font;
-  box-shadow: 0 1px 0 0 $font-light-mint;
+  font-weight: 500;
+  border-bottom: 1px solid $font-light-mint;
+
+  &:hover {
+    color: $font-light-mint;
+  }
+
+  &:active {
+    color: transparentize($font-light-mint, 0.3);
+    border-bottom: 1px solid transparentize($font-light-mint, 0.3);
+  }
 }
 
 .contacts__map {
@@ -88,10 +97,7 @@
   .contacts__link {
     display: block;
     width: 210px;
-    //width: auto;
     word-wrap: break-word;
-    //margin-left: 22px;
-    //box-shadow: 0 1px 0 0 $font-light-mint;
   }
 
   .contacts__text {
@@ -131,9 +137,10 @@
     margin-bottom: 47px;
   }
 
-  .contacts__item{
+  .contacts__item {
     margin-bottom: 30px;
   }
+
   .contacts__title {
     width: 525px;
     padding-left: 175px;

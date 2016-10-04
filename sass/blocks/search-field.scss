@@ -4,23 +4,20 @@
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*1.2;
 }
-.search-field svg{
+
+.search-field svg {
   position: relative;
-  top:2px;
   right: 24px;
 }
 @media (min-width:$break-tablet) {
   .search-field {
     font-size: 0;
     line-height: 0;
-    //width: 84px;
-    //height: 80px;
-    padding: 30px 30px 31px 30px;
-    //border-right: 1px solid $border-light-gray;
+    padding: 30px 30px 31px;
     border-left: 1px solid $border-light-gray;
   }
-  .search-field svg{
+
+  .search-field svg {
     position: static;
   }
-
 }

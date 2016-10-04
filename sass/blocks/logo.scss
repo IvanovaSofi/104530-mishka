@@ -1,41 +1,51 @@
 .logo {
   width: 86px;
   height: auto;
-  //padding: 20px 0;
-  //position: absolute;
   display: block;
   margin: 15.5px auto;
 
-  &--footer{
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--footer {
     display: none;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
-.logo img{
+
+.logo img {
   width: 100%;
 }
 @media (min-width:$break-tablet) {
   .logo {
     width: 112px;
-    //height: 46px;
     margin: 14.5px 0;
-    &--footer{
-      width: 102px;
+
+    &--footer {
+      width: 186px;
       height: 34px;
       display: block;
-      margin-right: 84px;
       position: static;
     }
   }
 }
-
 @media (min-width:$break-desktop) {
   .logo {
     width: 149px;
-   margin: 0 auto;
-   &--footer{
-     width: 102px;
-     height: 34px;
-     margin: 0;
-   }
+    margin: 0 auto;
+
+    &--footer {
+      width: 186px;
+      height: 34px;
+      margin: 0;
+    }
   }
 }
