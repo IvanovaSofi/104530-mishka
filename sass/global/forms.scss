@@ -7,7 +7,8 @@ input[type='password']{ /* поля */
   font-family: $base-font;
 
   &:focus{
-
+  border: none;
+  outline: none;
   }
 }
 

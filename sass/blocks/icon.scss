@@ -1,71 +1,159 @@
 .icon {
   display: inline block;
-  vertical-align: middle; //width:
-  //heiht
+  vertical-align: middle;
 }
-.icon-search{
-  width:18px;
-  height:19px;
-  fill:$bg-icon;
+
+.icon--search {
+  width: 18px;
+  height: 19px;
+  fill: $bg-icon;
+
+  &:hover {
+    fill: $bg-light-mint;
+  }
+
+  &:active {
+    fill: transparentize($bg-light-mint, 0.3);
+  }
 }
-.icon-cart{
-  width:21px;
-  height:18px;
-  fill:$bg-icon;
+
+.icon--cart {
+  width: 21px;
+  height: 18px;
+  fill: $bg-icon;
+
+  &:hover {
+    fill: $bg-light-mint;
+  }
+
+  &:active {
+    fill: transparentize($bg-light-mint, 0.3);
+  }
 }
-.icon-feature-1{
-  width:33px;
-  height:38px;
-  fill:$bg-light-mint;
+
+.icon--feature-1 {
+  width: 33px;
+  height: 38px;
+  fill: $bg-light-mint;
 }
-.icon-feature-2{
-  width:47px;
-  height:27px;
-  fill:$bg-light-mint;
+
+.icon--feature-2 {
+  width: 47px;
+  height: 27px;
+  fill: $bg-light-mint;
 }
-.icon-feature-3{
-  width:34px;
-  height:27px;
-  fill:$bg-light-mint;
+
+.icon--feature-3 {
+  width: 34px;
+  height: 27px;
+  fill: $bg-light-mint;
 }
-.icon-feature-4{
-  width:35px;
-  height:34px;
-  fill:$bg-light-mint;
+
+.icon--feature-4 {
+  width: 35px;
+  height: 34px;
+  fill: $bg-light-mint;
 }
-.icon-feature-5{
-  width:55px;
-  height:23px;
-  fill:$bg-light-mint;
+
+.icon--feature-5 {
+  width: 55px;
+  height: 23px;
+  fill: $bg-light-mint;
 }
-.icon-feature-6{
-  width:33px;
-  height:32px;
-  fill:$bg-light-mint;
+
+.icon--feature-6 {
+  width: 33px;
+  height: 32px;
+  fill: $bg-light-mint;
 }
-.icon-logo-footer{
-  width:86px;
-  height:35px;
+
+.icon--logo-footer {
+  width: 86px;
+  height: 35px;
+
+  &:hover {
+    fill: $bg-icon-hover;
+  }
+
+  &:active {
+    fill: transparentize($bg-light-mint, 0.3);
+  }
 }
-.icon-insta{
-  width:22px;
-  height:21px;
+
+.icon--insta {
+  width: 22px;
+  height: 21px;
+
+  &:hover {
+    fill: $bg-icon-hover;
+  }
+
+  &:active {
+    fill: transparentize($bg-light-mint, 0.3);
+  }
 }
-.icon-fb{
-  width:15px;
-  height:29px;
+
+.icon--fb {
+  width: 15px;
+  height: 29px;
+
+  &:hover {
+    fill: $bg-icon-hover;
+  }
+
+  &:active {
+    fill: transparentize($bg-light-mint, 0.3);
+  }
 }
-.icon-in{
-  width:24px;
-  height:20px;
+
+.icon--in {
+  width: 24px;
+  height: 20px;
+
+  &:hover {
+    fill: $bg-icon-hover;
+  }
+
+  &:active {
+    fill: transparentize($bg-light-mint, 0.3);
+  }
 }
-.icon-htmlacademy{
-  width:27px;
-  height:34px;
-  fill:$bg-light-mint;
+
+.icon--htmlacademy {
+  width: 27px;
+  height: 34px;
+  margin-left: 27px;
+  fill: $bg-light-mint;
+
+  &:hover {
+    fill: $bg-icon-hover;
+  }
+
+  &:active {
+    fill: transparentize($bg-light-mint, 0.3);
+  }
 }
-.icon-video{
-  width:46px;
-  height:31px;
-  fill:$bg-light-mint;
+
+.icon--video {
+  width: 46px;
+  height: 31px;
+  fill: $bg-light-mint;
+}
+
+.icon--phone {
+  width: 25px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  fill: $bg-icon;
+}
+
+.icon--mail {
+  width: 42px;
+  height: 31px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  fill: $bg-icon;
 }

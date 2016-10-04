@@ -1,10 +1,6 @@
-.slider {}
-
 .slider__arrows {
-
- @include clearfix;
- margin: 36px 0;
-  //outline: 2px solid black;
+  @include clearfix;
+  margin: 36px 0;
 }
 
 .slider__prev {
@@ -15,6 +11,14 @@
   margin: 0;
   background: url("../img/icon-left-arrow.svg") no-repeat center center;
   float: left;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__next {
@@ -25,16 +29,23 @@
   background: $bg-white;
   margin: 0;
   background: url("../img/icon-right-arrow.svg") no-repeat center center;
-}
-@media (min-width:$break-tablet){
-  .slider__item{
 
+  &:hover {
+    opacity: 0.6;
   }
-  .slider__arrows{
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+@media (min-width:$break-tablet) {
+  .slider__arrows {
     width: 167px;
     margin: 0;
   }
-  .slider__prev, .slider__next {
+
+  .slider__next,
+  .slider__prev {
     width: 80px;
     height: 62px;
     border: none;

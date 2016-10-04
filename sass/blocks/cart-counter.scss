@@ -1,14 +1,13 @@
 .cart-counter {
-
   position: relative;
   display: block;
   padding: 26px 0 26px 58px;
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*1.2;
 }
-.cart-counter svg{
+
+.cart-counter svg {
   position: relative;
-  top:2px;
   right: 24px;
 }
 @media (min-width:$break-tablet) {

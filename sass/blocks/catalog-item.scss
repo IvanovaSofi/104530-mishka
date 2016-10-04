@@ -6,7 +6,17 @@
 }
 
 .catalog-item__description {
-  padding: 22px 28px 0;
+  padding: 28px 28px 0;
+  &:hover {
+    box-shadow: 0 6px 10px $border-light-gray;
+  }
+  &:active {
+    box-shadow: 0 3px 5px $border-light-gray;
+  }
+}
+
+.catalog-item__picture-link img {
+  display: block;
 }
 
 .catalog-item__description-header {
@@ -33,13 +43,14 @@
   justify-content: space-between;
   font-size: $base-font-size*1.5;
   line-height: $base-line-height*1.2;
-  font-family: $base-font-bold;
-}
-.catalog-item__picture-link{
-  width:260px;
-  height: auto;
+  font-weight: 700;
 }
 
+.catalog-item__picture-link {
+  width: 260px;
+  height: auto;
+  display: block;
+}
 @media (min-width:$break-tablet) {
   .catalog-item {
     width: 668px;
@@ -47,50 +58,51 @@
     min-height: 334px;
     margin-bottom: 52px;
   }
-  .catalog-item__description{
+
+  .catalog-item__description {
     width: 334px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .catalog-item__picture-link{
+
+  .catalog-item__picture-link {
     width: 334px;
     height: auto;
   }
-  .catalog-item__picture-link img{
-    display: block;
-  }
-  .catalog-item__description-header{
+
+  .catalog-item__description-header {
     padding: 0;
     border: none;
   }
+
   .catalog-item__title {
     font-size: $base-font-size*2;
   }
+
   .catalog-item__text {
     font-size: $base-font-size*1.5;
   }
-  .catalog-item__description-footer{
+
+  .catalog-item__description-footer {
     font-size: $base-font-size*1.7;
     border-top: 1px solid $border-light-gray;
   }
-
 }
-@media (min-width:$break-desktop){
-  .catalog-item{
+@media (min-width:$break-desktop) {
+  .catalog-item {
     width: 316px;
     flex-wrap: wrap;
   }
-  .catalog-item__picture-link{
+
+  .catalog-item__picture-link {
     width: 316px;
     height: auto;
   }
-  .catalog-item__description{
+
+  .catalog-item__description {
     width: 316px;
     padding: 26px 28px 0;
   }
-  .catalog-item__description-header{
-    //padding-bottom: 30px;
-}
 }

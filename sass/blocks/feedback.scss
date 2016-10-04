@@ -1,7 +1,6 @@
 .feedback {
   margin: 30px 0;
   border: 1px solid transparent;
-  //outline: 2px solid rgba(95, 224, 237, 0.97);
   box-sizing: border-box;
 }
 
@@ -10,7 +9,7 @@
   line-height: $base-line-height*1.5;
 }
 
-.feedback__text{
+.feedback__text {
   font-size: $base-font-size*1.5;
   line-height: $base-line-height*1.5;
 }
@@ -18,38 +17,39 @@
 .feedback__author {
   display: block;
 }
-.feedback__text{
+
+.feedback__text {
   padding: 24px 0;
 }
+
 .feedback__title {
   margin: 0;
-  //outline: 2px solid rgba(13, 129, 140, 0.97);
 }
 
 .feedback__author-name {
+  display: block;
   margin-bottom: 4px;
   font-size: $base-font-size*1.8;
   line-height: $base-line-height*1.2;
   font-style: normal;
-  font-family: $base-font-bold;
-  //outline: 1px solid black;
+  font-weight: 700;
 }
 
 .feedback__author-tag {
+  display: block;
   font-size: $base-font-size*1.8;
   line-height: $base-line-height*1.2;
   font-style: normal;
-  font-family: $base-font;
-  //outline: 1px solid black;
-}
-.feedback__btn{
-  width: 260px;
 }
 
-@media (min-width:$break-tablet){
-  .feedback{
+.feedback__btn {
+  width: 260px;
+}
+@media (min-width:$break-tablet) {
+  .feedback {
     position: relative;
-    &:before{
+
+    &:before {
       position: absolute;
       content: "";
       width: 350px;
@@ -59,80 +59,87 @@
       left: -50px;
     }
   }
-  .feedback__wrapper{
+
+  .feedback__wrapper {
     position: relative;
     padding: 77px 0;
   }
-  .feedback__title{
+
+  .feedback__title {
     font-size: $base-font-size*4.3;
     line-height: $base-line-height*2.5;
   }
-  .feedback__item{
+
+  .feedback__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .feedback__author-name{
+  .feedback__author-name {
     margin-bottom: 7px;
   }
 
-  .feedback__list{
+  .feedback__list {
     font-size: $base-font-size*1.7;
     line-height: $base-line-height*1.5;
   }
-  .feedback__text{
+
+  .feedback__text {
     padding-top: 48px;
     padding-bottom: 57px;
     font-size: $base-font-size*1.7;
     line-height: $base-line-height*1.5;
   }
-  .feedback__btn{
+
+  .feedback__btn {
     position: absolute;
     width: 175px;
     top: 80px;
     right: 0;
   }
-  .feedback__author{
+
+  .feedback__author {
     width: 320px;
     margin-bottom: 0;
   }
 }
-
-@media (min-width: $break-tablet) and (min-resolution: 144dpi),
-       (min-width: $break-tablet) and (min-resolution: 1.5dppx) {
+@media (min-width: $break-tablet) and (min-resolution: 144dpi), (min-width: $break-tablet) and (min-resolution: 1.5dppx) {
   .feedback:before {
     background-image: url("../img/review@2x.jpg");
     background-size: 350px auto;
   }
 }
-
-@media (min-width:$break-desktop){
-  .feedback{
-    margin-top:64px;
+@media (min-width:$break-desktop) {
+  .feedback {
+    margin-top: 64px;
     margin-bottom: 120px;
-    &:before{
+
+    &:before {
       left: 0;
     }
   }
 
-  .feedback__wrapper{
+  .feedback__wrapper {
     padding: 44px 0;
   }
-  .feedback__text{
+
+  .feedback__text {
     padding-top: 18px;
     padding-bottom: 39px;
   }
 
-  .feedback__author{
+  .feedback__author {
     width: 500px;
   }
-  .feedback__title{
+
+  .feedback__title {
     padding-left: 175px;
     font-size: $base-font-size*5.3;
     line-height: $base-line-height*5.7;
   }
-  .feedback__list{
+
+  .feedback__list {
     padding-left: 175px;
   }
 }
