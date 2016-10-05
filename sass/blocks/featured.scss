@@ -1,7 +1,7 @@
 .featured {
   position: relative;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -78,7 +78,7 @@
   .featured {
     padding-bottom: 54px;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100%;
@@ -151,18 +151,18 @@
   .featured {
     padding-top: 72px;
     padding-bottom: 80px;
-  }
 
-  .featured:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 34px;
-    background: url("../img/zigzag-line.svg");
-    background-size: 56px 34px;
-    background-repeat: repeat;
-    bottom: 0;
-    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 34px;
+      background: url("../img/zigzag-line.svg");
+      background-size: 56px 34px;
+      background-repeat: repeat;
+      bottom: 0;
+      z-index: 2;
+    }
   }
 
   .featured__wrapper {

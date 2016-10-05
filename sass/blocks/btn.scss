@@ -1,6 +1,5 @@
 .btn {
   display: inline-block;
-  vertical-align: top;
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
@@ -19,7 +18,7 @@
   }
 
   &:active {
-    color: transparentize($font-white, 0.3);
+    color: rgba($font-white, 0.3);
     background: $border-dark-gray;
   }
 }

@@ -5,17 +5,19 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  &:after {
+  &::after {
     content: "";
     height: 0;
     width: 33.334%;
   }
 }
+
 @media (min-width:$break-tablet) {
   .catalog {
     margin-top: 78px;
   }
 }
+
 @media (min-width:$break-desktop) {
   .catalog {
     flex-direction: row;

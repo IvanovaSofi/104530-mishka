@@ -51,6 +51,7 @@
   height: auto;
   display: block;
 }
+
 @media (min-width:$break-tablet) {
   .catalog-item {
     width: 668px;
@@ -90,6 +91,7 @@
     border-top: 1px solid $border-light-gray;
   }
 }
+
 @media (min-width:$break-desktop) {
   .catalog-item {
     width: 316px;

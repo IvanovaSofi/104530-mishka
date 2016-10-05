@@ -7,9 +7,10 @@
   position: relative;
   border-bottom: 1px solid #ececec;
 }
+
 @media (min-width:$break-tablet) {
   .page-header {
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100%;
@@ -26,9 +27,10 @@
     min-height: 0;
   }
 }
+
 @media (min-width:$break-desktop) {
   .page-header {
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100%;

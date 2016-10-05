@@ -11,19 +11,20 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  &--footer {
-    display: none;
+.logo--footer {
+  display: none;
 
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
 }
 
 .logo img {
   width: 100%;
 }
+
 @media (min-width:$break-tablet) {
   .logo {
     width: 112px;
@@ -37,6 +38,7 @@
     }
   }
 }
+
 @media (min-width:$break-desktop) {
   .logo {
     width: 149px;
