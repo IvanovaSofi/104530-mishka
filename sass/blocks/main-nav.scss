@@ -30,7 +30,7 @@
   }
 
   .main-nav--opened {
-    margin-top: 78px;
+    padding-top: 78px;
   }
 
   .main-nav--opened .main-nav__list {
@@ -88,10 +88,6 @@
     &:active::before {
       background-color: rgba(0, 0, 0, 0.3);
     }
-  }
-
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
   }
 
   .main-nav--nojs .main-nav__list {
