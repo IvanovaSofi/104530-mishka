@@ -30,7 +30,7 @@
   }
 
   .main-nav--opened {
-    margin-top: 78px;
+    padding-top: 78px;
   }
 
   .main-nav--opened .main-nav__list {
@@ -91,7 +91,7 @@
   }
 
   .main-nav--nojs .main-nav__toggle {
-    display: none;
+    //display: none;
   }
 
   .main-nav--nojs .main-nav__list {

@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
+var csscomb = require("gulp-csscomb");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -32,6 +33,7 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
+      .pipe(csscomb())
       .pipe(gulp.dest("build/css"))
       .pipe(minify())
       .pipe(rename("style.min.css"))
