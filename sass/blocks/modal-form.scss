@@ -19,7 +19,7 @@
   border: 2px solid $border-light-gray;
 
   &:hover {
-    border: 2px solid transparentize($border-dark-gray, 0.3);
+    border: 2px solid rgba($border-dark-gray, 0.3);
   }
 }
 
@@ -33,6 +33,15 @@
 .modal-form input[type="radio"]:checked+label {
   border: 2px solid $bg-light-mint;
 }
+.modal-form input[type="radio"]:checked:disabled+label {
+  color: $disable-color;
+  border: 2px solid $disable-color;
+}
+.modal-form input[type="radio"]:disabled+label {
+  color: $disable-color;
+  border: 2px solid $disable-color;
+}
+
 @media (min-width:$break-tablet) {
   .modal-form__toggle {
     width: 112px;

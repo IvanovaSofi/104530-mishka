@@ -4,8 +4,16 @@
   line-height: $base-line-height*0.9;
 }
 
+.order-form__group {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 33px;
+}
+
 .order-form__label {
   display: block;
+  order: -1;
   cursor: pointer;
   color: $bg-black;
   font-size: $base-font-size*1.7;
@@ -45,6 +53,15 @@
   &:hover {
     box-shadow: 0 2px 0 0 $bg-light-mint;
   }
+
+  &:disabled {
+    color: $disable-color;
+    box-shadow: 0 2px 0 0 $disable-color;
+  }
+
+  &:disabled ~ .order-form__label {
+    color: $disable-color;
+  }
 }
 
 .order-form input[type="tel"]:hover~.icon-phone {
@@ -61,11 +78,6 @@
 
 .order-form input[type="email"]:active~.icon-mail {
   fill: $bg-light-mint;
-}
-
-.order-form__group {
-  position: relative;
-  padding-top: 33px;
 }
 
 .order-form__wrapper {
@@ -98,18 +110,24 @@
   &:hover {
     box-shadow: 0 0 0 2px $bg-light-mint;
   }
+
+  &:disabled {
+    color: $disable-color;
+    box-shadow: 0 0 0 2px $disable-color;
+  }
 }
 
 .order-form__checkbox {
   display: block;
   position: relative;
+  width: 100%;
   margin-left: 62px;
   margin-bottom: 44px;
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*0.9;
   font-weight: 700;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     width: 40px;
@@ -127,8 +145,33 @@
 }
 
 .order-form__checkbox:active:before {
-  border: 2px solid transparentize($border-dark-gray, 0.3);
+  border: 2px solid $disable-color;
   transition: all 0.4s;
+}
+
+.order-form__input:disabled + .order-form__checkbox {
+  color: $disable-color;
+}
+
+.order-form__input:disabled + .order-form__checkbox:before {
+  border: 2px solid $disable-color;
+}
+
+.order-form__input:disabled + .order-form__toggle {
+  color: $disable-color;
+}
+
+.order-form__input:disabled + .order-form__toggle:before {
+  border: 2px solid $disable-color;
+}
+
+.order-form input[type="radio"]:checked:disabled + label:before {
+  background: $disable-color;
+}
+
+.order-form input[type="checkbox"]:checked:disabled + label:after {
+  border-right: 3px solid $disable-color;
+  border-bottom: 3px solid $disable-color;
 }
 
 .order-form__toggle {
@@ -140,7 +183,7 @@
   line-height: $base-line-height*0.9;
   font-weight: 700;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     width: 40px;
@@ -159,7 +202,7 @@
 }
 
 .order-form__toggle:active:before {
-  border: 2px solid transparentize($border-dark-gray, 0.3);
+  border: 2px solid rgba($border-dark-gray, 0.3);
   transition: all 0.4s;
 }
 
@@ -227,7 +270,6 @@
 
   .order-form__group {
     flex-basis: 500px;
-    display: flex;
     flex-wrap: wrap;
   }
 
@@ -242,7 +284,7 @@
     font-size: $base-font-size*1.9;
     margin-bottom: 60px;
 
-    &:before {
+    &::before {
       left: -80px;
       width: 52px;
       height: 52px;
@@ -265,7 +307,7 @@
     margin-left: 80px;
     font-size: $base-font-size*1.9;
 
-    &:before {
+    &::before {
       left: -80px;
       width: 52px;
       height: 52px;

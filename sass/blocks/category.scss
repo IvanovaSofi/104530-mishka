@@ -17,38 +17,37 @@
   line-height: $base-line-height*1.2;
   display: block;
 
-  &--first {
-    margin-top: 5px;
-    background-color: $bg-light-mint;
-    background-image: url("../img/icon-interior.svg");
-    background-size: 41px 62px;
-    background-repeat: no-repeat;
-    background-position: 90% center;
-
-    &:hover {
-      color: $font-white;
-      margin-top: 0;
-      padding-bottom: 35px;
-    }
-  }
-
-  &--second {
-    background-color: $bg-dark-mint;
-    background-image: url("../img/icon-toy.svg");
-    background-size: 61px 61px;
-    background-repeat: no-repeat;
-    background-position: 92% center;
-
-    &:hover {
-      color: $font-white;
-      margin-top: -5px;
-      padding-bottom: 35px;
-
-    }
-  }
-
   &:active {
-    color: transparentize($font-white, 0.3);
+    color: rgba($font-white, 0.3);
+  }
+}
+
+.category__link--first {
+  margin-top: 5px;
+  background-color: $bg-light-mint;
+  background-image: url("../img/icon-interior.svg");
+  background-size: 41px 62px;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+
+  &:hover {
+    color: $font-white;
+    margin-top: 0;
+    padding-bottom: 35px;
+  }
+}
+
+.category__link--second {
+  background-color: $bg-dark-mint;
+  background-image: url("../img/icon-toy.svg");
+  background-size: 61px 61px;
+  background-repeat: no-repeat;
+  background-position: 92% center;
+
+  &:hover {
+    color: $font-white;
+    margin-top: -5px;
+    padding-bottom: 35px;
   }
 }
 
@@ -72,21 +71,25 @@
     font-size: $base-font-size*2;
     line-height: $base-line-height*1.5;
     margin-top: 0;
-    &--first {
-      background-position: 90% 50%;
-      &:hover {
-        margin-top: -5px;
-      }
-    }
+  }
 
-    &--second {
-      background-position: 92% 50%;
-      &:hover {
-        margin-top: -5px;
-      }
+  .category__link--first {
+    background-position: 90% 50%;
+
+    &:hover {
+      margin-top: -5px;
+    }
+  }
+
+  .category__link--second {
+    background-position: 92% 50%;
+
+    &:hover {
+      margin-top: -5px;
     }
   }
 }
+
 @media (min-width:$break-desktop) {
   .category {
     margin-top: -121px;

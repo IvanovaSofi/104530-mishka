@@ -3,7 +3,7 @@
   padding-bottom: 30px;
   position: relative;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -39,11 +39,12 @@
   line-height: $base-line-height;
   font-weight: 700;
 }
+
 @media (min-width:$break-tablet) {
   .about {
     padding: 20px 0;
 
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100%;
@@ -100,9 +101,10 @@
     line-height: $base-line-height*5;
   }
 }
+
 @media (min-width:$break-desktop) {
   .about {
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 100%;

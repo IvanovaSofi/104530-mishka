@@ -45,11 +45,12 @@
 .feedback__btn {
   width: 260px;
 }
+
 @media (min-width:$break-tablet) {
   .feedback {
     position: relative;
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
       width: 350px;
@@ -104,18 +105,20 @@
     margin-bottom: 0;
   }
 }
+
 @media (min-width: $break-tablet) and (min-resolution: 144dpi), (min-width: $break-tablet) and (min-resolution: 1.5dppx) {
-  .feedback:before {
+  .feedback::before {
     background-image: url("../img/review@2x.jpg");
     background-size: 350px auto;
   }
 }
+
 @media (min-width:$break-desktop) {
   .feedback {
     margin-top: 64px;
     margin-bottom: 120px;
 
-    &:before {
+    &::before {
       left: 0;
     }
   }
