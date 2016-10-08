@@ -42,7 +42,7 @@
 
   .main-nav__toggle {
     position: absolute;
-    top: 27px;
+    top: 30px;
     z-index: 4;
     right: calc((100% - 260px)/2);
     width: 20px;
@@ -121,7 +121,7 @@
 
   .main-nav__item:nth-child(2) {
     order: 6;
-    margin-right: 34px;
+    margin-right: 37px;
   }
 
   .main-nav__item:nth-child(3) {
@@ -135,7 +135,7 @@
 
   .main-nav__link {
     font-size: $base-font-size*1.5;
-    padding: 14px 0;
+    padding: 15px 0;
   }
 
   .main-nav__toggle {
@@ -145,11 +145,11 @@
 
 @media (min-width:$break-desktop) {
   .main-nav__list {
-    box-shadow: 0 -52px 0 0 $bg-inner inset,0 -53px 0 0 $border-menu inset;
+    box-shadow: 0 -59px 0 0 $bg-inner inset,0 -60px 0 0 $border-menu inset;
     padding: 0 calc((100% - 1050px)/2);
 
     &--inner {
-      box-shadow: 0 -52px 0 0 $bg-light-gray inset,0 -53px 0 0 $border-menu inset;
+      box-shadow: 0 -59px 0 0 $bg-light-gray inset,0 -60px 0 0 $border-menu inset;
     }
   }
 
@@ -193,13 +193,13 @@
 
   .main-nav__link {
     box-sizing: border-box;
-    padding: 28px 0;
+    padding: 33px 0 32px;
     font-size: $base-font-size*1.7;
 
     &--extra {
       display: block;
       font-size: $base-font-size*1.5;
-      padding: 14px 0;
+      padding: 17px 0;
     }
   }
 
@@ -209,7 +209,7 @@
   }
 
   .main-nav__item:nth-child(3) > .main-nav__link {
-    padding: 28px 34px;
+    padding: 33px 34px 32px;
   }
 
   .extra-nav__list {

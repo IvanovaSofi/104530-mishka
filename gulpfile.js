@@ -30,7 +30,6 @@ gulp.task("style", function() {
       ]
     }),
       mqpacker({
-        sort: true
       })
     ]))
       .pipe(csscomb())
@@ -44,9 +43,6 @@ gulp.task("style", function() {
 gulp.task("serve", function() {
   server.init({
     server: "build",
-    notify: false,
-    open: true,
-    ui: false
   });
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);

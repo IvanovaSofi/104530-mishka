@@ -96,6 +96,7 @@
   .catalog-item {
     width: 316px;
     flex-wrap: wrap;
+    margin-bottom: 55px;
   }
 
   .catalog-item__picture-link {
@@ -106,5 +107,8 @@
   .catalog-item__description {
     width: 316px;
     padding: 26px 28px 0;
+  }
+  .catalog-item__description-footer{
+    margin-top: 7px;
   }
 }

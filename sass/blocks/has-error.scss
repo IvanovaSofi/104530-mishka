@@ -1,0 +1,6 @@
+.has-error{
+  box-shadow: 0 2px 0 0 $border-error;
+}
+.has-error--message{
+  box-shadow: 0 0 0 2px $border-error;
+}

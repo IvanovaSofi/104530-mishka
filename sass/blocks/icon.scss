@@ -1,11 +1,10 @@
 .icon {
   display: inline block;
   vertical-align: middle;
+  transition: all 0.4s;
 }
 
 .icon--search {
-  width: 18px;
-  height: 19px;
   fill: $bg-icon;
 
   &:hover {
@@ -18,8 +17,6 @@
 }
 
 .icon--cart {
-  width: 21px;
-  height: 18px;
   fill: $bg-icon;
 
   &:hover {
@@ -31,45 +28,16 @@
   }
 }
 
-.icon--feature-1 {
-  width: 33px;
-  height: 38px;
-  fill: $bg-light-mint;
-}
-
-.icon--feature-2 {
-  width: 47px;
-  height: 27px;
-  fill: $bg-light-mint;
-}
-
-.icon--feature-3 {
-  width: 34px;
-  height: 27px;
-  fill: $bg-light-mint;
-}
-
-.icon--feature-4 {
-  width: 35px;
-  height: 34px;
-  fill: $bg-light-mint;
-}
-
-.icon--feature-5 {
-  width: 55px;
-  height: 23px;
-  fill: $bg-light-mint;
-}
-
+.icon--feature-1,
+.icon--feature-2,
+.icon--feature-3,
+.icon--feature-4,
+.icon--feature-5,
 .icon--feature-6 {
-  width: 33px;
-  height: 32px;
   fill: $bg-light-mint;
 }
 
 .icon--logo-footer {
-  width: 86px;
-  height: 35px;
 
   &:hover {
     fill: $bg-icon-hover;
@@ -81,8 +49,6 @@
 }
 
 .icon--insta {
-  width: 22px;
-  height: 21px;
 
   &:hover {
     fill: $bg-icon-hover;
@@ -94,8 +60,6 @@
 }
 
 .icon--fb {
-  width: 15px;
-  height: 29px;
 
   &:hover {
     fill: $bg-icon-hover;
@@ -107,8 +71,6 @@
 }
 
 .icon--in {
-  width: 24px;
-  height: 20px;
 
   &:hover {
     fill: $bg-icon-hover;
@@ -120,8 +82,6 @@
 }
 
 .icon--htmlacademy {
-  width: 27px;
-  height: 34px;
   margin-left: 27px;
   fill: $bg-light-mint;
 
@@ -135,14 +95,10 @@
 }
 
 .icon--video {
-  width: 46px;
-  height: 31px;
   fill: $bg-light-mint;
 }
 
 .icon--phone {
-  width: 25px;
-  height: 24px;
   position: absolute;
   top: 15px;
   right: 5px;
@@ -150,8 +106,6 @@
 }
 
 .icon--mail {
-  width: 42px;
-  height: 31px;
   position: absolute;
   top: 15px;
   right: 0;
@@ -162,8 +116,8 @@
   position: absolute;
   content: "";
   cursor: pointer;
-  top: calc(50% - 38px);
-  left: calc(50% - 48px);
+  top: calc(50% - 34px);
+  left: calc(50% - 49px);
   &:hover {
     transform: scale(1.2);
   }
@@ -171,5 +125,57 @@
   &:active {
     transform: scale(0.8);
     opacity: 0.7;
+  }
+}
+.icon--interior{
+  position: absolute;
+  content: "";
+  top:20px;
+  right: 40px;
+}
+
+.icon--toy{
+  position: absolute;
+  content: "";
+  top:20px;
+  right: 30px;
+}
+
+@media (min-width:$break-tablet) {
+  .icon--interior{
+    top:30px;
+    right: 38px;
+  }
+
+  .icon--toy{
+    top:35px;
+    right: 35px;
+  }
+
+  .icon--phone {
+    top: 12px;
+    right: 25px;
+  }
+
+  .icon--mail {
+    top: 13px;
+    right: 16px;
+  }
+}
+
+@media (min-width:$break-desktop) {
+  .icon--interior{
+    top:30px;
+    right: 35px;
+  }
+
+  .icon--toy{
+    top:35px;
+    right: 35px;
+  }
+
+  .icon--play{
+    top: calc(50% - 39px);
+    left: calc(50% - 41px);
   }
 }

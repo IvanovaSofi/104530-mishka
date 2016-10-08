@@ -27,14 +27,15 @@
 
 @media (min-width:$break-tablet) {
   .logo {
-    width: 112px;
-    margin: 14.5px 0;
+    width: 115px;
+    margin: 18px 0 18px;
 
     &--footer {
       width: 186px;
       height: 34px;
       display: block;
       position: static;
+      margin: 0;
     }
   }
 }
@@ -42,7 +43,7 @@
 @media (min-width:$break-desktop) {
   .logo {
     width: 149px;
-    margin: 0 auto;
+    margin: 5px auto 0;
 
     &--footer {
       width: 186px;

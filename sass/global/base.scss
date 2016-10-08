@@ -34,10 +34,10 @@ a {
   font-weight: 700;
   transition: all 0.4s;
   &:hover{
-   color:transparentize($font-black, 0.6);
+   color:rgba($font-black, 0.6);
   }
   &:active{
-    color:transparentize($font-black, 0.3);
+    color:rgba($font-black, 0.3);
   }
 }
 
