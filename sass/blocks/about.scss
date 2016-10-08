@@ -15,10 +15,12 @@
     z-index: 2;
   }
 }
-
+.about__wrapper{
+  padding-top: 20px;
+}
 .about__item {
   width: 260px;
-  padding: 15px 0;
+  padding: 15px 0 25px;
 }
 
 .about__title {
@@ -35,6 +37,7 @@
 }
 
 .about__text {
+  padding-top: 15px;
   font-size: $base-font-size*1.7;
   line-height: $base-line-height;
   font-weight: 700;
@@ -42,7 +45,7 @@
 
 @media (min-width:$break-tablet) {
   .about {
-    padding: 20px 0;
+    padding: 13px 0 20px;
 
     &::after {
       position: absolute;
@@ -61,10 +64,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    padding-top: 8px;
   }
 
   .about__item {
     width: 320px;
+    padding-bottom: 49px;
 
     &--01 {
       order: 1;
@@ -104,6 +109,7 @@
 
 @media (min-width:$break-desktop) {
   .about {
+    padding-top: 23px;
     &::after {
       position: absolute;
       content: "";

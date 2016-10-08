@@ -1,5 +1,5 @@
 .contacts {
-  padding: 33px 0;
+  padding: 33px 0 40px;
 }
 
 .contacts__wrapper {
@@ -46,13 +46,25 @@
 
 .contacts__map {
   position: relative;
-  @include container;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  width: 320px;
+  height: 457px;
+  margin: 40px auto;
+
+  &::after{
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 100px;
+    top:35%;
+    left: 45%;
+    background: url("../img/icon-map-pin.svg")
+  }
 }
 
 .contacts__btn {
+  display: block;
   width: 260px;
+  margin: 0 auto;
 }
 
 @media (min-width:$break-tablet) {
@@ -114,11 +126,13 @@
   }
 
   .contacts__map {
-    margin: 52px 0;
+    width: 768px;
+    height: auto;
+    margin: 52px auto 60px;
   }
 
   .contacts__btn {
-    width: 260px;
+    width: 230px;
     margin: 0 auto;
   }
 }
@@ -126,7 +140,7 @@
 @media (min-width:$break-desktop) {
   .contacts {
     position: relative;
-    padding-bottom: 99px;
+    padding-bottom: 107px;
     padding-top: 138px;
   }
 
@@ -159,11 +173,11 @@
     height: 457px;
     position: absolute;
     margin: 0;
-    top: 72px;
+    top: 67px;
     left: 50%;
   }
 
   .contacts__btn {
-    margin-left: 175px;
+    margin-left: 225px;
   }
 }

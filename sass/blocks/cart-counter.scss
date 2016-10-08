@@ -8,12 +8,20 @@
 
 .cart-counter svg {
   position: relative;
-  right: 24px;
+  right: 30px;
+}
+
+.cart-counter:hover .icon--cart{
+  fill: $bg-light-mint;
+}
+
+.cart-counter:active .icon--cart{
+  fill: rgba($bg-light-mint, 0.3);
 }
 
 @media (min-width:$break-tablet) {
   .cart-counter {
-    padding: 28px 0 28px 58px;
+    padding: 33px 0 32px 60px;
     border-left: 1px solid $border-light-gray;
   }
 }

@@ -1,5 +1,5 @@
 .media {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .media__content {
@@ -17,7 +17,7 @@
 
 .media__header {
   display: flex;
-  padding: 25px;
+  padding: 7px 33px;
   align-items: center;
 }
 
@@ -47,7 +47,7 @@
 
 .media__footer {
   overflow: hidden;
-  padding: 25px 34px;
+  padding: 29px 34px;
 }
 
 .media__btn {
@@ -88,7 +88,7 @@
   }
 
   .media__header {
-    padding: 35px 40px 27px;
+    padding: 22px 36px 16px;
     align-items: center;
   }
 
@@ -105,12 +105,13 @@
 
 @media (min-width:$break-desktop) {
   .media {
-    margin-bottom: 110px;
+    margin-bottom: 106px;
   }
 
   .media__content {
     display: block;
     position: relative;
+    min-height: 455px;
   }
 
   .media__video {
@@ -125,7 +126,7 @@
   .media__header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 50px 60px 14px 760px;
+    padding: 45px 60px 14px 760px;
   }
 
   .media__title {
@@ -140,6 +141,6 @@
 
   .media__btn {
     width: 100%;
-    margin: 44px 0 60px;
+    margin: 47px 0 60px;
   }
 }
