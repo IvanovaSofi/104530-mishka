@@ -56,6 +56,10 @@
     line-height: $base-line-height*2.5;
   }
 
+  .intro__title br{
+    display: none;
+  }
+
   .intro-text {
     font-size: $base-font-size*1.7;
     line-height: $base-line-height*1.5;

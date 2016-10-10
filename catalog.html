@@ -200,7 +200,7 @@
     var navToggle = document.querySelector('.main-nav__toggle');
     var modal = document.querySelector('.modal');
     var overlay = document.querySelector('.overlay');
-    var popup = document.querySelector('.popup');
+    var popup = document.querySelectorAll('.popup');
 
     navMain.classList.remove('main-nav--nojs');
     navMain.classList.add('main-nav--closed');
@@ -216,11 +216,13 @@
       }
     });
 
-    popup.addEventListener('click', function(event) {
-      event.preventDefault();
-      overlay.classList.remove('overlay--hidden');
-      modal.classList.remove('modal--hidden');
-    });
+    for(var i=0; i<popup.length; i++){
+      popup[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        overlay.classList.remove('overlay--hidden');
+        modal.classList.remove('modal--hidden');
+      });
+    };
 
     overlay.addEventListener('click', function(event) {
       overlay.classList.add('overlay--hidden');

@@ -10,6 +10,9 @@
   position: relative;
   padding-top: 33px;
 }
+.order-form__fillset:nth-of-type(1) .order-form__group {
+  padding-bottom: 8px;
+}
 
 .order-form__label {
   display: block;
@@ -137,7 +140,7 @@
   position: relative;
   width: 100%;
   margin-left: 62px;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
   font-size: $base-font-size*1.7;
   line-height: $base-line-height*0.9;
   font-weight: 700;
@@ -176,19 +179,19 @@
   }
 }
 
-.order-form input[type="checkbox"]:hover + .order-form__checkbox:before,
-.order-form input[type="radio"]:hover + .order-form__toggle:before,
-.order-form__checkbox:hover:before,
-.order-form__toggle:hover:before {
+.order-form input[type="checkbox"]:hover + .order-form__checkbox::before,
+.order-form input[type="radio"]:hover + .order-form__toggle::before,
+.order-form__checkbox:hover::before,
+.order-form__toggle:hover::before {
   border: 2px solid $bg-light-mint;
   transition: all 0.4s;
 }
 
-.order-form input[type="checkbox"]:active + .order-form__checkbox:before,
-.order-form input[type="radio"]:active + .order-form__toggle:before,
-.order-form input[type="radio"]:checked:active + .order-form__toggle:before,
-.order-form__checkbox:active:before,
-.order-form__toggle:active:before {
+.order-form input[type="checkbox"]:active + .order-form__checkbox::before,
+.order-form input[type="radio"]:active + .order-form__toggle::before,
+.order-form input[type="radio"]:checked:active + .order-form__toggle::before,
+.order-form__checkbox:active::before,
+.order-form__toggle:active::before {
   border: 2px solid $active-color;
   transition: all 0.4s;
 }
@@ -198,26 +201,26 @@
   color: $disable-color;
 }
 
-.order-form__input:disabled + .order-form__checkbox:before,
-.order-form__input:disabled + .order-form__toggle:before {
+.order-form__input:disabled + .order-form__checkbox::before,
+.order-form__input:disabled + .order-form__toggle::before {
   border: 2px solid $disable-color;
 }
 
-.order-form input[type="radio"]:checked:disabled + label:before {
+.order-form input[type="radio"]:checked:disabled + label::before {
   background: $disable-color;
 }
 
-.order-form input[type="checkbox"]:checked:disabled + label:after {
+.order-form input[type="checkbox"]:checked:disabled + label::after {
   border-right: 3px solid $disable-color;
   border-bottom: 3px solid $disable-color;
 }
 
-.order-form input[type="radio"]:checked + .order-form__toggle:before {
+.order-form input[type="radio"]:checked + .order-form__toggle::before {
   background: $bg-light-mint;
   box-shadow: 0 0 0 12px $bg-white inset;
 }
 
-.order-form input[type="checkbox"]:checked + label:after {
+.order-form input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
   left: -44px;
@@ -246,12 +249,24 @@
 }
 
 @media (min-width:$break-tablet) {
-  .order-form{
+  .order-form {
     padding-bottom: 25px;
+  }
+
+  .order-form__group:nth-of-type(2) {
+    padding-top: 0;
+  }
+
+  .order-form__group:nth-of-type(3) {
+    padding-top: 0;
   }
 
   .order-form__fillset:nth-child(2n) {
     background: $bg-light-gray;
+  }
+
+  .order-form__fillset:nth-child(2) .order-form__wrapper {
+    padding-bottom: 76px;
   }
 
   .order-form__fillset:nth-child(3) .order-form__wrapper {
@@ -260,6 +275,10 @@
 
   .order-form__fillset:nth-child(4) .order-form__title {
     margin-top: 18px;
+  }
+
+  .order-form__fillset:nth-child(5) .order-form__wrapper {
+    padding-top: 70px;
   }
 
   .order-form__wrapper {
@@ -279,7 +298,7 @@
   }
 
   .order-form__wrapper:last-child {
-    padding-bottom: 75px;
+    padding-bottom: 63px;
   }
 
   .order-form__title {
@@ -289,6 +308,14 @@
     &::after {
       display: none;
     }
+  }
+
+  .order-form__fillset:nth-of-type(3) .order-form__title {
+    margin-top: 10px;
+  }
+
+  .order-form__fillset:nth-of-type(5) .order-form__title {
+    margin-top: 17px;
   }
 
   .order-form__group {
@@ -310,7 +337,7 @@
   }
 
   .order-form__checkbox {
-    flex-basis: 170px;
+    flex-basis: 150px;
     margin-left: 80px;
     font-size: $base-font-size*1.9;
     margin-bottom: 60px;
@@ -322,6 +349,10 @@
     }
   }
 
+  .order-form__checkbox:nth-of-type(2n) {
+    margin-left: 113px;
+  }
+
   .order-form__checkbox:nth-last-of-type(1),
   .order-form__checkbox:nth-last-of-type(2) {
     margin-bottom: 0;
@@ -331,7 +362,7 @@
     padding-top: 0;
   }
 
-  .order-form input[type="checkbox"]:checked + label:after {
+  .order-form input[type="checkbox"]:checked + label::after {
     left: -58px;
     width: 10px;
     height: 20px;
@@ -373,13 +404,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top:14px;
+    margin-top: 14px;
     margin-bottom: 5px;
   }
 
   .order-form__message {
     height: 142px;
     margin-top: 0;
+    font-size: $base-font-size*1.9;
+    line-height: $base-line-height*1.5;
   }
 
   .order-form__motion {
@@ -395,6 +428,10 @@
 }
 
 @media (min-width:$break-desktop) {
+  .order-form {
+    padding-bottom: 23px;
+  }
+
   .order-form__wrapper {
     justify-content: flex-start;
   }
@@ -406,6 +443,27 @@
 
   .order-form__group {
     flex-basis: 700px;
+  }
+
+  .order-form__fillset:nth-of-type(2) .order-form__group {
+    flex-basis: 795px;
+  }
+
+  .order-form__fillset:nth-of-type(1) .order-form__wrapper {
+    padding-bottom: 60px;
+  }
+
+  .order-form__fillset:nth-of-type(2) .order-form__wrapper {
+    padding-top: 78px;
+    padding-bottom: 77px;
+  }
+
+  .order-form__fillset:nth-of-type(4) .order-form__wrapper:nth-of-type(2) {
+    padding-bottom: 60px;
+  }
+
+  .order-form__fillset:nth-of-type(5) .order-form__wrapper {
+    padding-top: 70px;
   }
 
   .order-form__group:not(:first-of-type) {
@@ -421,11 +479,27 @@
   }
 
   .order-form__checkbox {
-    flex-basis: 150px;
+    flex-basis: 184px;
+  }
+
+  .order-form__checkbox:nth-of-type(2n) {
+    margin-left: 80px;
   }
 
   .order-form__checkbox:nth-last-of-type(3) {
     margin-bottom: 0;
+  }
+
+  .order-form__checkbox::before {
+    top: -18px;
+  }
+
+  .order-form input[type="checkbox"]:checked + label::after {
+    top: -4px;
+  }
+
+  .order-form__message {
+    padding-top: 10px;
   }
 
   .order-form__footer {
