@@ -49,7 +49,7 @@
     </nav>
     <div class="intro intro--image">
       <p class="intro-trigger">Бесплатная доставка по России</p>
-      <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
+      <h1 class="intro__title">Милые штуки ручной<br> работы для дома</h1>
     </div>
   </header>
   <main class="page-main">
@@ -109,27 +109,27 @@
         <div class="about__wrapper">
           <div class="about__item  about__item--01">
             <svg class="icon  icon--feature-1" width="33" height="38"><use xlink:href="#icon-feature-1"></use></svg>
-            <div class="about__text">Экологически чистые материалы</div>
+            <div class="about__text">Экологически<br>чистые материалы</div>
           </div>
           <div class="about__item  about__item--02">
             <svg class="icon  icon--feature-2" width="47" height="27"><use xlink:href="#icon-feature-3"></use></svg>
-            <div class="about__text">Скандинавский стиль по российской цене</div>
+            <div class="about__text">Скандинавский стиль<br>по российской цене</div>
           </div>
           <div class="about__item  about__item--03">
             <svg class="icon  icon--feature-3" width="34" height="27"><use xlink:href="#icon-feature-5"></use></svg>
-            <div class="about__text">Увеличивает лайки на фотографиях</div>
+            <div class="about__text">Увеличивает лайки<br>на фотографиях</div>
           </div>
           <div class="about__item  about__item--04">
             <svg class="icon  icon--feature-4" width="35" height="34"><use xlink:href="#icon-feature-2"></use></svg>
-            <div class="about__text">Связано вручную с любовью и умилением</div>
+            <div class="about__text">Связано вручную<br>с любовью и умилением</div>
           </div>
           <div class="about__item  about__item--05">
             <svg class="icon  icon--feature-5" width="55" height="23"><use xlink:href="#icon-feature-4"></use></svg>
-            <div class="about__text">Поддержка отечественного производителя</div>
+            <div class="about__text">Поддержка отечественного<br>производителя</div>
           </div>
           <div class="about__item  about__item--06">
             <svg class="icon  icon--feature-6" width="33" height="32"><use xlink:href="#icon-feature-6"></use></svg>
-            <div class="about__text">Поставляется в подарочной упаковке</div>
+            <div class="about__text">Поставляется в<br>подарочной упаковке</div>
           </div>
         </div>
         <div class="feedback">
@@ -137,8 +137,8 @@
             <h2 class="feedback__title">Отзывы</h2>
             <div class="feedback__list">
               <blockquote class="feedback__item  slider__item">
-                <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали стильнее, а также набирают больше
-                  лайков!
+                <p class="feedback__text">
+                  Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
                 </p>
                 <cite class="feedback__author">
                       <span class="feedback__author-name">Анастасия Красильникова</span>
@@ -165,7 +165,7 @@
           </div>
           <div class="contacts__item">
             <span class="contacts__field">адрес:</span>
-            <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
         </div>
         </div>
@@ -224,7 +224,7 @@
     var navToggle = document.querySelector('.main-nav__toggle');
     var modal = document.querySelector('.modal');
     var overlay = document.querySelector('.overlay');
-    var popup = document.querySelector('.popup');
+    var popup = document.querySelectorAll('.popup');
 
     navMain.classList.remove('main-nav--nojs');
     navMain.classList.add('main-nav--closed');
@@ -240,11 +240,13 @@
       }
     });
 
-    popup.addEventListener('click', function(event) {
-      event.preventDefault();
-      overlay.classList.remove('overlay--hidden');
-      modal.classList.remove('modal--hidden');
-    });
+    for(var i=0; i<popup.length; i++){
+      popup[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        overlay.classList.remove('overlay--hidden');
+        modal.classList.remove('modal--hidden');
+      });
+    };
 
     overlay.addEventListener('click', function(event) {
       overlay.classList.add('overlay--hidden');

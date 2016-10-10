@@ -26,6 +26,7 @@
 
 .contacts__text {
   display: table-cell;
+  padding-right: 21px;
 }
 
 .contacts__link {
@@ -56,7 +57,7 @@
     width: 67px;
     height: 100px;
     top:35%;
-    left: 45%;
+    left: 38%;
     background: url("../img/icon-map-pin.svg")
   }
 }
@@ -69,7 +70,7 @@
 
 @media (min-width:$break-tablet) {
   .contacts {
-    padding: 60px 0;
+    padding: 60px 0 58px;
   }
 
   .contacts__wrapper {
@@ -112,9 +113,14 @@
   }
 
   .contacts__text {
+    padding: 0;
     display: block;
     width: 210px;
     word-wrap: break-word;
+  }
+
+  .contacts__text br{
+    display: none;
   }
 
   .contacts__field {
@@ -128,7 +134,12 @@
   .contacts__map {
     width: 768px;
     height: auto;
-    margin: 52px auto 60px;
+    margin: 52px auto 55px;
+
+    &::after{
+      top:36%;
+      left: 45%;
+    }
   }
 
   .contacts__btn {
@@ -178,6 +189,6 @@
   }
 
   .contacts__btn {
-    margin-left: 225px;
+    margin-left: calc(50% - 350px);
   }
 }

@@ -37,6 +37,37 @@
   fill: $bg-light-mint;
 }
 
+.icon--feature-1{
+  position: relative;
+  top:0;
+  left:8px;
+}
+.icon--feature-2{
+  position: relative;
+  top:-7px;
+  left:0;
+}
+.icon--feature-3{
+  position: relative;
+  top:-4px;
+  left:9px;
+}
+.icon--feature-4{
+  position: relative;
+  top:3px;
+  left:3px;
+}
+.icon--feature-5{
+  position: relative;
+  top:-6px;
+  left:-5px;
+}
+.icon--feature-6{
+  position: relative;
+  top:-4px;
+  left:3px;
+}
+
 .icon--logo-footer {
 
   &:hover {
@@ -107,7 +138,7 @@
 
 .icon--mail {
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 0;
   fill: $bg-icon;
 }
@@ -131,14 +162,14 @@
   position: absolute;
   content: "";
   top:20px;
-  right: 40px;
+  right: 35px;
 }
 
 .icon--toy{
   position: absolute;
   content: "";
   top:20px;
-  right: 30px;
+  right: 25px;
 }
 
 @media (min-width:$break-tablet) {
@@ -177,5 +208,14 @@
   .icon--play{
     top: calc(50% - 39px);
     left: calc(50% - 41px);
+  }
+  .icon--phone {
+    top: 12px;
+    right: 7px;
+  }
+
+  .icon--mail {
+    top: 10px;
+    right: 0px;
   }
 }
